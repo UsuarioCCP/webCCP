@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "daisyui/dist/full.css";
+
+:root {
+  --dark-red: #be1704;
+  --gradient-red-yellow:linear-gradient(90deg, #d53369 0%, #daae51 100%);
+  --gradient-red: linear-gradient(to bottom, #d51943ff 0%, #aa0024ff 100%);
+  --gradient-rose-webkit: -webkit-linear-gradient(160deg, #d82b56,#be264c,#920c2d);
+  --gradient-rose: linear-gradient(160deg, #d82b56,#be264c,#920c2d);
+  --gradient-blue: linear-gradient(to top, #12325d 0%, #275579 100%);
+  /* --gradient-blue: linear-gradient(to top, #046f87 0%, #243453 100%); */
+  --rojo: #ef3620;
+  --rojo-claro: #fa6351;
+  --naranja: #f8792eff;
+  --dorado: #d1b980;
+  --gradient-dorado: linear-gradient(160deg, antiquewhite 100%, rgb(224, 217, 150) 0%);
+  --amarillo-claro: #fdfc8b;
+  --gradient-fondo: linear-gradient(90deg, #efefef,#e9e8e9,#efefef);
+  --webkit-gradient: -webkit-linear-gradient(90deg, #efefef,#e9e8e9,#efefef);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fondo-escheresque {
+  background-image: url('https://i.postimg.cc/6pP8NwjF/fondo-escheresque.png');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background: var(--gradient-fondo);
+  background: var(--webkit-gradient);
+  /* background-image: url("https://i.postimg.cc/KckP4fBD/239b031e-276a-4555-9289-a523ab87f625.jpg");
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.menu li:hover .active{
+  background: rgba(205, 205, 205, 0.644) !important;
+  color: black;
+  font-weight:bolder;
+}
+
+.gradient-red-yellow{
+  background:var(--gradient-red-yellow);
+}
+.gradient-blue{
+  background:var(--gradient-blue);
+}
+.gradient-rose{
+  background: var(--gradient-rose);
+}
+
+.bg-gradient-rose{
+  background: var(--gradient-rose);
+  background: var(--gradient-rose-webkit);
+}
+.btn-gradient-rose{
+  background: var(--gradient-rose);
+  background: var(--gradient-rose-webkit);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hover-gradient-rose:hover{
+  transform: scale(1.1);
+  transition-delay: 0.1s;
+  color: white;
+  background-image: var(--gradient-rose) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.bg-gradient-red{
+    background-image: var(--gradient-red);
+}
+.btn-gradient-red{
+    color: white;
+    background-image: var(--gradient-red);
+}
+.text-gradient-red{
+    background: var(--gradient-red); /* Para navegadores con prefijo -webkit- */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.text-gradient-rose{
+  background: var(--gradient-rose);
+  background: var(--gradient-rose-webkit);/* Para navegadores con prefijo -webkit- */
+    -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hover-text-gradient-rose:hover{
+  background: var(--gradient-rose);
+  background: var(--gradient-rose-webkit);/* Para navegadores con prefijo -webkit- */
+    -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-blue{
+  background: var(--gradient-blue);
+    background-clip: text;
+    color: transparent;
+}
+.text-dorado{
+  color: var(--dorado);
+}
+.hover-gradient-red:hover{
+    background-image: var(--gradient-red) !important;
+    color: white !important;
+}
+
+
+/* footer */
+.icono--redes {
+  background-image: var(--gradient-rose);
+  border-style: groove;
+    border-radius: 25px;
+    border-color: var(--naranja);
+    width: 5vh;
+    display: flex !important;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    color: var(--dorado);
 }

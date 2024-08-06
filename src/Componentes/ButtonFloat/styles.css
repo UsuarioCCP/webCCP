@@ -1,0 +1,93 @@
+.animated-button span {
+    position: absolute;
+    display: block;
+  }
+  
+  .animated-button .span1 {
+    height: 3px;
+    width: 200px;
+    top: 0;
+    left: -200px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+  }
+  
+  @keyframes span1 {
+    0% {
+      left: -200px;
+    }
+    100% {
+      left: 200px;
+    }
+  }
+  
+  .animated-button .span2 {
+    height: 70px;
+    width: 3px;
+    top: -70px;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #f6e58d);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+  }
+  
+  @keyframes span2 {
+    0% {
+      top: -70px;
+    }
+    100% {
+      top: 70px;
+    }
+  }
+  
+  .animated-button .span3 {
+    height: 3px;
+    width: 200px;
+    right: -200px;
+    bottom: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), #f6e58d);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+  }
+  
+  @keyframes span3 {
+    0% {
+      right: -200px;
+    }
+    100% {
+      right: 200px;
+    }
+  }
+  
+  .animated-button .span4 {
+    height: 70px;
+    width: 3px;
+    bottom: -70px;
+    left: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+  }
+  
+  @keyframes span4 {
+    0% {
+      bottom: -70px;
+    }
+    100% {
+      bottom: 70px;
+    }
+  }
+  
+  .animated-button:hover span {
+    animation-play-state: paused;
+  }
+  

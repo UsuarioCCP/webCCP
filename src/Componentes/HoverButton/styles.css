@@ -1,0 +1,35 @@
+:root {
+  --body-bg-color: #1a1c1d;
+  --text-color: #aaaebc;
+  --hr-color: #26292a;
+  --red: #e74c3c;
+  --gradient-dorad: linear-gradient(160deg, rgb(237, 209, 98) 100%, rgb(243, 186, 53) 0%);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+li{
+  padding: 5px;
+}
+
+.menu .opcion::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  /* background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab); */
+  background-image: var(--gradient-dorad);
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.menu .opcion:hover::before {
+  transform: scaleX(1);
+}

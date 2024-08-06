@@ -1,0 +1,14 @@
+
+
+.event-detail-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.event-list-card {
+    cursor: pointer;
+}
+
+.event-list-card:hover {
+    background-color: #f0f0f0;
+}

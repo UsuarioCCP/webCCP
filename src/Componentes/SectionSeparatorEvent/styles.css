@@ -1,0 +1,9 @@
+.bg-baner-separador-dos{
+    background-image: url("../../Assets/Images/banner2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

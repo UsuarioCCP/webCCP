@@ -1,0 +1,4 @@
+.fondo-card{
+    background-image: var(--gradient-blue);
+    border: 1px solid rgb(194, 154, 20);
+}
