@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { HoverButton } from "../HoverButton"
-// import Logo from "../../Assets/Images/LogoCCP.webp"
+import LogoVUE from "../../Assets/Images/vue-logo.svg"
 import './styles.css'
 
 const Header = () => {
@@ -155,9 +155,9 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-            <div className="form-control">
-                <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
-            </div>
+            <a href="https://www.vue.gov.co/" target="_blank" className=" drop-shadow-2xl m-5">
+                <img src={LogoVUE} alt="VUE" />
+            </a>
         </div>
       </div>
     </header>
