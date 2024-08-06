@@ -15,7 +15,7 @@ const Aside = () => {
         <div className="drawer-side">
           <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
           <ul className="menu self-start p-4 w-80 min-h-full bg-base-200 text-base-content">
-            {/* Close button */}
+            {/* Close button */} 
             <li className="flex justify-end">
               <label htmlFor="my-drawer-4" className="btn btn-sm btn-circle">✕</label>
             </li>
