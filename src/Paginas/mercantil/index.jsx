@@ -178,6 +178,7 @@ const Mercantil = () => {
               <img
                 class="w-full mask mask-squircle md:w-4/5 z-50"
                 src="https://img.freepik.com/fotos-premium/confiado-empresario-chocolatero-pie-su-tienda-brazos-cruzados-mirando-camara-ai_154515-11029.jpg?w=1060"
+                alt="mascara-circulo"
               />
             </div>
           </div>
