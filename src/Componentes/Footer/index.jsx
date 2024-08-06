@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <div className="relative z-50">
-      <footer className="footer footer-one p-10 text-base-content place-items-center content-start">
+      <footer className="footer footer-one p-10 text-base-content justify-items-center">
         <nav className="text-white ">
           <h6 className="text-gradient-rose text-lg font-semibold">
             Servicios
@@ -51,7 +51,7 @@ const Footer = () => {
           </a>
         </nav>
       </footer>
-      <footer className="footer px-10 py-4 border-t bg-gray-800 text-white border-base-300 shadow-inner fondo-escheresque">
+      <footer className="footer items-center px-10 py-2 border-t bg-gray-800 text-white border-base-300 shadow-inner fondo-escheresque">
         <aside className="items-center grid-flow-col text-dorado">
           <img
             src="https://i.postimg.cc/pdGRw85T/LOGO.png"
@@ -76,7 +76,8 @@ const Footer = () => {
                         <a href="#" title="Privacy Politic">Privacy Politic</a>
                     </span> */}
         </div>
-        <nav className="md:place-self-center md:justify-self-end">
+        <nav className="lg:justify-items-center md:place-self-center md:justify-self-end">
+          <h2 className="items-center text-dorado font-semibold">Redes Sociales</h2>
           <div className="grid grid-flow-col gap-4">
             <ul className="m-0 flex justify-center space-x-4">
               <li>
