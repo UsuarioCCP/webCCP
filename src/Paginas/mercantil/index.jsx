@@ -542,16 +542,16 @@ const Mercantil = () => {
                         <div className="col-span-1">
                             <div>Requisitos
                                 <ul className="menu bg-base-200 w-56 rounded-box">
-                                    <li><a>Item 1</a></li>
-                                    <li><a>Item 2</a></li>
-                                    <li><a>Item 3</a></li>
+                                    <li><div>Item 1</div></li>
+                                    <li><div>Item 2</div></li>
+                                    <li><div>Item 3</div></li>
                                 </ul>
                             </div>
                             <div> Donde Inscribirse
                                 <ul className="menu bg-base-200 w-56 rounded-box">
-                                    <li><a>Item 1</a></li>
-                                    <li><a>Item 2</a></li>
-                                    <li><a>Item 3</a></li>
+                                    <li><div>Item 1</div></li>
+                                    <li><div>Item 2</div></li>
+                                    <li><div>Item 3</div></li>
                                 </ul>
                             </div>
                         </div>
