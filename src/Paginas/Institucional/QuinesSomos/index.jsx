@@ -88,7 +88,7 @@ const QuienesSomos = () => {
           ¿Quienes Somos?
         </h2>
         <p className="text-center">Descubre cómo desde la Cámara de Comercio de Pamplona trabajamos para impulsar el crecimiento económico y empresarial de nuestra región</p>
-        <div className="flex divider divider-neutral opacity-5 justify-center mx-36"></div>
+        <div className="flex divider divider-neutral opacity-30 justify-center mx-36"></div>
         <div className="grid justify-items-center grid-cols-1 lg:grid-cols-5">
           <div className="col-span-2 lg:my-2 h-auto">
             <figure className="flex flex-wrap justify-center mt-20">

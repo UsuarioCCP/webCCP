@@ -20,7 +20,7 @@ const Historia = () => {
             Labateca, Mutiscua, Cucutilla, Pamplonita, Silos y Toledo, en el
             Departamento Norte de Santander.
           </p>
-          <div className="flex divider divider-neutral opacity-5 justify-center mx-36"></div>
+          <div className="flex divider divider-neutral opacity-30 justify-center mx-36"></div>
           <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start bg-gray-100 bg-opacity-70 shadow-lg border rounded m-10 px-28">
             <div className="flex flex-wrap items-center">
               <div className="w-full lg:w-1/2 lg:pr-4">

@@ -12,7 +12,7 @@ const PoliticaCalidad = () => {
           <h2 className="text-3xl text-gradient-rose font-bold m-8 text-center drop-shadow-xl ">
             Política de Calidad
           </h2>
-          <div className="flex divider divider-neutral opacity-5 justify-center mx-36"></div>         
+          <div className="flex divider divider-neutral opacity-30 justify-center mx-36"></div>         
           <div className="flex flex-wrap lg:flex-row justify-center items-center lg:items-start bg-gray-100 bg-opacity-70 shadow-lg border rounded m-10 px-28">
             <p className="text-center my-10 mx-48 leading-loose">
               La Cámara de Comercio de Pamplona como entidad depositaria de fe
