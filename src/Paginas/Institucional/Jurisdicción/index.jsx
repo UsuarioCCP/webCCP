@@ -193,7 +193,7 @@ const Jurisdiccion = () => {
 
         <div className="absolute w-10/12 z-20">
           <div className="relative mt-48 ">
-            <table className="table t-0 border-separate border-spacing-y-16 border-spacing-x-10">
+            <table className="table t-0 border-separate border-spacing-y-16 border-spacing-x-10 w-full">
               <tbody>
                 {rows.map((row, rowIndex) => (
                   <tr key={rowIndex}>
@@ -272,3 +272,4 @@ const Jurisdiccion = () => {
 };
 
 export { Jurisdiccion };
+
