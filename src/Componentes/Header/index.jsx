@@ -155,7 +155,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end">
-            <a href="https://www.vue.gov.co/" target="_blank" className=" drop-shadow-2xl m-5">
+            <a href="https://www.vue.gov.co/" target="_blank" rel="noreferrer" className=" drop-shadow-2xl m-5">
                 <img src={LogoVUE} alt="VUE" />
             </a>
         </div>
