@@ -3,7 +3,6 @@ import { Prueba } from "../../Componentes/prueba/prueba";
 import "./styles.css";
 
 const Mercantil = () => {
-  const [scrollPos, setScrollPos] = useState(0);
   const headerRef = useRef(null);
   const navContentRef = useRef(null);
   const navActionRef = useRef(null);
@@ -49,7 +48,6 @@ const Mercantil = () => {
         navActionRef.current.classList.add("gradient-red-yellow");
         navActionRef.current.classList.remove("text-gray-800");
         navActionRef.current.classList.add("text-white");
-        // Use to switch toggleColour colours
         toToggleRefs.current.forEach((element) => {
           element.classList.add("text-gray-800");
           element.classList.remove("text-white");
@@ -63,18 +61,14 @@ const Mercantil = () => {
         navActionRef.current.classList.add("bg-white");
         navActionRef.current.classList.remove("text-white");
         navActionRef.current.classList.add("text-gray-800");
-        // Use to switch toggleColour colours
         toToggleRefs.current.forEach((element) => {
           element.classList.add("text-white");
           element.classList.remove("text-gray-800");
         });
-
         headerRef.current.classList.remove("shadow");
         navContentRef.current.classList.remove("bg-white");
         navContentRef.current.classList.add("bg-gray-100");
       }
-
-      setScrollPos(newPos);
     };
 
     document.addEventListener("scroll", handleScroll);
