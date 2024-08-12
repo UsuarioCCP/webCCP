@@ -238,7 +238,7 @@ const Mercantil = () => {
             Que es el registro Mercantil
             </h2>
             <div class="w-full mb-4">
-              <div class="h-1 mx-auto gradient-red-yellow w-64 opacity-25 my-0 py-0 rounded-t"></div>
+              <div class="h-1 mx-auto gradient-red-yellow w-96 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
             <div class="flex flex-wrap">
               <div class="w-5/6 sm:w-1/2 p-6">
@@ -265,11 +265,11 @@ const Mercantil = () => {
                 </p>
               </div>
               <div class="flex justify-center w-96 sm:w-1/2 p-6">
-                <img className="mask mask-circle w-72" src="https://img.freepik.com/fotos-premium/hombre-que-sostiene-simbolo-metalico-marca-registrada-imagen-conceptual-ilustracion-propiedad-intelectual-o-proteccion-productos-o-servicios_556904-1921.jpg?w=540" alt="" />
+                <img className="mask mask-circle w-96 object-cover" src="https://img.freepik.com/fotos-premium/hombre-que-sostiene-simbolo-metalico-marca-registrada-imagen-conceptual-ilustracion-propiedad-intelectual-o-proteccion-productos-o-servicios_556904-1921.jpg?w=540" alt="" />
               </div>
             </div>
             <div class="flex flex-wrap flex-col-reverse sm:flex-row">
-              <div class="w-full sm:w-1/2 p-6 mt-6">
+              <div class="flex justify-center w-96 sm:w-1/2 p-6">
                 {/* <svg
                   class="w-5/6 sm:h-64 mx-auto"
                   viewBox="0 0 1176.60617 873.97852"
@@ -425,7 +425,7 @@ const Mercantil = () => {
                   <circle cx="991.17" cy="607.78" r="11.968" fill="#ff6347" />
                   <circle cx="600.35" cy="480.68" r="11.968" fill="#ff6347" />
                 </svg> */}
-                <img className="mask mask-circle" src="https://img.freepik.com/foto-gratis/hombre-anteojos-encogiendose-hombros-manos-extendidas-lados-boca-abierta-pie-interrogado-astutamente-sobre-gris-inconsciente_176420-43168.jpg?t=st=1717799522~exp=1717803122~hmac=51751a8bdb13d7f34082f095ebeca5cb60d1d23e7d764a17e871a4f38d527088&w=1060" alt="" />
+                <img className="mask mask-circle w-96 object-cover" src="https://img.freepik.com/foto-gratis/hombre-anteojos-encogiendose-hombros-manos-extendidas-lados-boca-abierta-pie-interrogado-astutamente-sobre-gris-inconsciente_176420-43168.jpg?t=st=1717799522~exp=1717803122~hmac=51751a8bdb13d7f34082f095ebeca5cb60d1d23e7d764a17e871a4f38d527088&w=960" alt="" />
               </div>
               <div class="w-full sm:w-1/2 p-6 mt-6">
                 <div class="align-middle">
@@ -467,7 +467,7 @@ const Mercantil = () => {
               Tipos de registros
             </h2>
             <div className="w-full mb-4">
-              <div className="h-1 mx-auto gradient-red-yellow w-64 opacity-25 my-0 py-0 rounded-t"></div>
+              <div className="h-1 mx-auto gradient-red-yellow w-96 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
             {/* Persona Natural */}
             <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink lg:m-5">
