@@ -7,6 +7,7 @@ const Mercantil = () => {
   const navContentRef = useRef(null);
   const navActionRef = useRef(null);
   const toToggleRefs = useRef([]);
+  const imgRef = useRef(null);
 
   const [isNaturalOpen, setIsNaturalOpen] = useState(false);
   const [isJuridicaOpen, setIsJuridicaOpen] = useState(false);
@@ -45,7 +46,7 @@ const Mercantil = () => {
       if (newPos > 10) {
         headerRef.current.classList.add("bg-white");
         navActionRef.current.classList.remove("bg-white");
-        navActionRef.current.classList.add("gradient-red-yellow");
+        navActionRef.current.classList.add("gradient-rose");
         navActionRef.current.classList.remove("text-gray-800");
         navActionRef.current.classList.add("text-white");
         toToggleRefs.current.forEach((element) => {
@@ -55,9 +56,10 @@ const Mercantil = () => {
         headerRef.current.classList.add("shadow");
         navContentRef.current.classList.remove("bg-gray-100");
         navContentRef.current.classList.add("bg-white");
+        imgRef.current.classList.remove("grayscale", "saturate-100");
       } else {
         headerRef.current.classList.remove("bg-white");
-        navActionRef.current.classList.remove("gradient-red-yellow");
+        navActionRef.current.classList.remove("gradient-rose");
         navActionRef.current.classList.add("bg-white");
         navActionRef.current.classList.remove("text-white");
         navActionRef.current.classList.add("text-gray-800");
@@ -68,6 +70,7 @@ const Mercantil = () => {
         headerRef.current.classList.remove("shadow");
         navContentRef.current.classList.remove("bg-white");
         navContentRef.current.classList.add("bg-gray-100");
+        imgRef.current.classList.add("grayscale", "saturate-100");
       }
     };
 
@@ -80,12 +83,12 @@ const Mercantil = () => {
 
   return (
     <div>
-      <section class="leading-normal tracking-normal text-white gradient-red-yellow">
+      <section class="leading-normal tracking-normal text-white gradient-rose">
         {/* <!--Nav--> */}
         <nav
           ref={headerRef}
           id="header"
-          class="fixed w-full z-40 top-0 text-white"
+          className="fixed w-full z-40 top-0 text-white"
         >
           <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
             <div class="pl-4 flex items-center">
@@ -94,8 +97,7 @@ const Mercantil = () => {
                 href="/"
               >
                 {/* <!--Agregar logo Camara --> */}
-                <img src="" alt="logo camara" />
-                Logo Camara
+                <img className="w-20 grayscale saturate-100" ref={imgRef} src="https://i.postimg.cc/9FDdqdpT/Logo-Camara.png" alt="logo camara" />
               </a>
             </div>
             {/* <!-- Menu hamburguesa --> */}
@@ -162,7 +164,7 @@ const Mercantil = () => {
           <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
             {/* <!--Left Col--> */}
             <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left lg:pl-16">
-              <p class="uppercase tracking-loose w-full">texto</p>
+              {/* <p class="uppercase tracking-loose w-full">texto</p> */}
               <h1 class="my-4 text-5xl font-bold leading-tight">
               Formaliza tu negocio y accede a mayores oportunidades.
               </h1>
@@ -233,17 +235,17 @@ const Mercantil = () => {
         <section class="bg-white border-b py-8">
           <div class="container max-w-5xl mx-auto m-8">
             <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-              Title
+            Que es el registro Mercantil
             </h2>
             <div class="w-full mb-4">
               <div class="h-1 mx-auto gradient-red-yellow w-64 opacity-25 my-0 py-0 rounded-t"></div>
             </div>
             <div class="flex flex-wrap">
               <div class="w-5/6 sm:w-1/2 p-6">
-                <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                {/* <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
                   Que es el registro Mercantil
-                </h3>
-                <p class="text-gray-600 mb-8">
+                </h3> */}
+                <p class="text-gray-600 mb-4 leading-loose">
                   El Registro Mercantil permite a todos los empresarios ejercer
                   cualquier actividad comercial y acreditar públicamente su
                   calidad de comerciante. Además, el Registro Mercantil les
@@ -262,8 +264,8 @@ const Mercantil = () => {
                   </a>
                 </p>
               </div>
-              <div class="w-full sm:w-1/2 p-6">
-                <img className="mask mask-circle" src="https://img.freepik.com/fotos-premium/hombre-que-sostiene-simbolo-metalico-marca-registrada-imagen-conceptual-ilustracion-propiedad-intelectual-o-proteccion-productos-o-servicios_556904-1921.jpg?w=740" alt="" />
+              <div class="flex justify-center w-96 sm:w-1/2 p-6">
+                <img className="mask mask-circle w-72" src="https://img.freepik.com/fotos-premium/hombre-que-sostiene-simbolo-metalico-marca-registrada-imagen-conceptual-ilustracion-propiedad-intelectual-o-proteccion-productos-o-servicios_556904-1921.jpg?w=540" alt="" />
               </div>
             </div>
             <div class="flex flex-wrap flex-col-reverse sm:flex-row">
