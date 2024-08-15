@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { ScrollMercantil } from "../../Componentes/ScrollMercantil";
 import { Prueba } from "../../Componentes/prueba/prueba";
 import "./styles.css";
 
@@ -22,7 +23,10 @@ const Mercantil = () => {
     }
     setTimeout(() => {
       if (!isNaturalOpen) {
-        naturalRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+        naturalRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
       }
     }, 0);
   };
@@ -34,7 +38,10 @@ const Mercantil = () => {
     }
     setTimeout(() => {
       if (!isJuridicaOpen) {
-        juridicaRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
+        juridicaRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "end",
+        });
       }
     }, 0);
   };
@@ -97,7 +104,12 @@ const Mercantil = () => {
                 href="/"
               >
                 {/* <!--Agregar logo Camara --> */}
-                <img className="w-20 grayscale saturate-100" ref={imgRef} src="https://i.postimg.cc/9FDdqdpT/Logo-Camara.png" alt="logo camara" />
+                <img
+                  className="w-20 grayscale saturate-100"
+                  ref={imgRef}
+                  src="https://i.postimg.cc/9FDdqdpT/Logo-Camara.png"
+                  alt="logo camara"
+                />
               </a>
             </div>
             {/* <!-- Menu hamburguesa --> */}
@@ -166,10 +178,12 @@ const Mercantil = () => {
             <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left lg:pl-16">
               {/* <p class="uppercase tracking-loose w-full">texto</p> */}
               <h1 class="my-4 text-5xl font-bold leading-tight">
-              Formaliza tu negocio y accede a mayores oportunidades.
+                Formaliza tu negocio y accede a mayores oportunidades.
               </h1>
               <p class="leading-normal text-2xl mb-8">
-              "Aprovecha los beneficios del registro mercantil: protección legal, acceso a créditos y mayor confianza de clientes y proveedores. ¡Descubre cómo registrar tu empresa hoy mismo!"
+                "Aprovecha los beneficios del registro mercantil: protección
+                legal, acceso a créditos y mayor confianza de clientes y
+                proveedores. ¡Descubre cómo registrar tu empresa hoy mismo!"
               </p>
               <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                 Subscribe
@@ -235,7 +249,7 @@ const Mercantil = () => {
         <section class="bg-white border-b py-8">
           <div class="container max-w-5xl mx-auto m-8">
             <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-            Que es el registro Mercantil
+              Que es el registro Mercantil
             </h2>
             <div class="w-full mb-4">
               <div class="h-1 mx-auto gradient-red-yellow w-96 opacity-25 my-0 py-0 rounded-t"></div>
@@ -265,7 +279,11 @@ const Mercantil = () => {
                 </p>
               </div>
               <div class="flex justify-center w-96 sm:w-1/2 p-6">
-                <img className="mask mask-circle w-96 object-cover" src="https://img.freepik.com/fotos-premium/hombre-que-sostiene-simbolo-metalico-marca-registrada-imagen-conceptual-ilustracion-propiedad-intelectual-o-proteccion-productos-o-servicios_556904-1921.jpg?w=540" alt="" />
+                <img
+                  className="mask mask-circle w-96 object-cover"
+                  src="https://img.freepik.com/fotos-premium/hombre-que-sostiene-simbolo-metalico-marca-registrada-imagen-conceptual-ilustracion-propiedad-intelectual-o-proteccion-productos-o-servicios_556904-1921.jpg?w=540"
+                  alt=""
+                />
               </div>
             </div>
             <div class="flex flex-wrap flex-col-reverse sm:flex-row">
@@ -425,7 +443,11 @@ const Mercantil = () => {
                   <circle cx="991.17" cy="607.78" r="11.968" fill="#ff6347" />
                   <circle cx="600.35" cy="480.68" r="11.968" fill="#ff6347" />
                 </svg> */}
-                <img className="mask mask-circle w-96 object-cover" src="https://img.freepik.com/foto-gratis/hombre-anteojos-encogiendose-hombros-manos-extendidas-lados-boca-abierta-pie-interrogado-astutamente-sobre-gris-inconsciente_176420-43168.jpg?t=st=1717799522~exp=1717803122~hmac=51751a8bdb13d7f34082f095ebeca5cb60d1d23e7d764a17e871a4f38d527088&w=960" alt="" />
+                <img
+                  className="mask mask-circle w-96 object-cover"
+                  src="https://img.freepik.com/foto-gratis/hombre-anteojos-encogiendose-hombros-manos-extendidas-lados-boca-abierta-pie-interrogado-astutamente-sobre-gris-inconsciente_176420-43168.jpg?t=st=1717799522~exp=1717803122~hmac=51751a8bdb13d7f34082f095ebeca5cb60d1d23e7d764a17e871a4f38d527088&w=960"
+                  alt=""
+                />
               </div>
               <div class="w-full sm:w-1/2 p-6 mt-6">
                 <div class="align-middle">
@@ -483,7 +505,10 @@ const Mercantil = () => {
                     Persona Natural
                   </div>
                   <p className="text-gray-800 text-base px-6 mb-5">
-                  Recuerda que una 'Persona Natural Comerciante' es aquella que ejerce esta actividad de manera habitual y profesional a título personal, asumiendo todos los derechos y obligaciones de la actividad comercial que ejerce.
+                    Recuerda que una 'Persona Natural Comerciante' es aquella
+                    que ejerce esta actividad de manera habitual y profesional a
+                    título personal, asumiendo todos los derechos y obligaciones
+                    de la actividad comercial que ejerce.
                   </p>
                 </a>
               </div>
@@ -513,7 +538,7 @@ const Mercantil = () => {
                     Persona Juridica
                   </div>
                   <p className="text-gray-800 text-base px-6 mb-5">
-                  Descripción persona juridica
+                    Descripción persona juridica
                   </p>
                 </a>
               </div>
@@ -529,213 +554,104 @@ const Mercantil = () => {
               </div>
             </div>
           </div>
-           {/*contentino Persona Natural */}
-           {isNaturalOpen && (
-              <div ref={naturalRef} className="bg-white text-black">
-                <h1>Contenido Persona Natural</h1>
-                <div className="collapse collapse-arrow bg-base-200 mb-2">
-                  <input type="radio" name="my-accordion-1" defaultChecked />
-                  < Prueba />
-                  <div className="collapse-title text-xl font-medium">
-                    Inscripción
-                  </div>
-                  <div className="collapse-content">
-                    <div className="grid grid-cols-3">
-                        <div className="col-span-1">
-                            <div>Requisitos
-                                <ul className="menu bg-base-200 w-56 rounded-box">
-                                    <li><div>Item 1</div></li>
-                                    <li><div>Item 2</div></li>
-                                    <li><div>Item 3</div></li>
-                                </ul>
-                            </div>
-                            <div> Donde Inscribirse
-                                <ul className="menu bg-base-200 w-56 rounded-box">
-                                    <li><div>Item 1</div></li>
-                                    <li><div>Item 2</div></li>
-                                    <li><div>Item 3</div></li>
-                                </ul>
-                            </div>
+          {/*contentino Persona Natural */}
+          {isNaturalOpen && (
+            <div
+              ref={naturalRef}
+              className="flex justify-center bg-white text-black"
+            >
+              <div className="navbar lg:w-2/3 bg-base-300 rounded-box">
+                <div className="flex flex-1 justify-center px-2">
+                  <div className="flex items-stretch gap-5">
+                    {/* Boton modal renovacion */}
+                    <div>
+                      <button
+                        className="btn"
+                        onClick={() =>
+                          document.getElementById("my_modal_3").showModal()
+                        }
+                      >
+                        Renovación
+                      </button>
+                      <dialog id="my_modal_3" className="modal">
+                        <div className="modal-box max-w-[72rem] h-[80vh]">
+                          <form method="dialog">
+                            {/* if there is a button in form, it will close the modal */}
+                            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                              ✕
+                            </button>
+                          </form>
+                          <div className="card-body px-4 pt-2 pb-0 m-0">
+                            <ScrollMercantil />
+                          </div>
                         </div>
-                        <div className="col-span-2">
-                            <h2>Paso a paso</h2>
-                            <div>
-                                <ul className="menu bg-base-200 w-56 rounded-box">
-                                    <li>
-                                        <div className="flex">
-                                            <div>numero</div>
-                                            <p>texto</p>
-                                            <img src="" alt="img" />
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="flex">
-                                            <div>numero</div>
-                                            <p>texto</p>
-                                            <img src="" alt="img" />
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="flex">
-                                            <div>numero</div>
-                                            <p>texto</p>
-                                            <img src="" alt="img" />
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                      </dialog>
                     </div>
-                  </div>
-                </div>
-                <div className="collapse collapse-arrow bg-base-200 mb-2">
-                  <input type="radio" name="my-accordion-1" />
-                  <div className="collapse-title text-xl font-medium">
-                    Renovación
-                  </div>
-                  <div className="collapse-content">
-                    <div className="grid grid-cols-3">
-                        <div className="col-span-1">
-                            <div>Requisitos
-                                <ul className="menu bg-base-200 w-56 rounded-box">
-                                    <li><div>Item 1</div></li>
-                                    <li><div>Item 2</div></li>
-                                    <li><div>Item 3</div></li>
-                                </ul>
-                            </div>
-                            <div> Donde Inscribirse
-                                <ul className="menu bg-base-200 w-56 rounded-box">
-                                    <li><div>Item 1</div></li>
-                                    <li><div>Item 2</div></li>
-                                    <li><div>Item 3</div></li>
-                                </ul>
-                            </div>
+
+                    {/* Boton modal cancelación */}
+                    <div>
+                      <button
+                        className="btn"
+                        onClick={() =>
+                          document.getElementById("my_modal_3").showModal()
+                        }
+                      >
+                        Cancelación
+                      </button>
+                      <dialog id="my_modal_3" className="modal">
+                        <div className="modal-box max-w-[72rem] h-[80vh]">
+                          <form method="dialog">
+                            {/* if there is a button in form, it will close the modal */}
+                            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                              ✕
+                            </button>
+                          </form>
+                          <div className="card-body px-4 pt-2 pb-0 m-0">
+                            <ScrollMercantil />
+                          </div>
                         </div>
-                        <div className="col-span-2">
-                            <h2>Paso a paso</h2>
-                            <div>
-                                <ul className="menu bg-base-200 w-56 rounded-box">
-                                    <li>
-                                        <div className="flex">
-                                            <div>numero</div>
-                                            <p>texto</p>
-                                            <img src="" alt="img" />
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="flex">
-                                            <div>numero</div>
-                                            <p>texto</p>
-                                            <img src="" alt="img" />
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="flex">
-                                            <div>numero</div>
-                                            <p>texto</p>
-                                            <img src="" alt="img" />
-                                        </div>
-                                    </li>
-                                    
-                                </ul>
-                            </div>
-                            
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="collapse collapse-arrow bg-base-200 mb-2">
-                  <input type="radio" name="my-accordion-1" />
-                  <div className="collapse-title text-xl font-medium">
-                    Cancelación
-                  </div>
-                  <div className="collapse-content">
-                  <div className="grid grid-cols-3">
-                        <div className="col-span-1">
-                            <div>Requisitos
-                                <ul className="menu bg-base-200 w-56 rounded-box">
-                                    <li><div>Item 1</div></li>
-                                    <li><div>Item 2</div></li>
-                                    <li><div>Item 3</div></li>
-                                </ul>
-                            </div>
-                            <div> Donde Inscribirse
-                                <ul className="menu bg-base-200 w-56 rounded-box">
-                                    <li><div>Item 1</div></li>
-                                    <li><div>Item 2</div></li>
-                                    <li><div>Item 3</div></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col-span-2">
-                            <h2>Paso a paso</h2>
-                            <div>
-                                <ul className="menu bg-base-200 w-56 rounded-box">
-                                    <li>
-                                        <div className="flex">
-                                            <div>numero</div>
-                                            <p>texto</p>
-                                            <img src="" alt="img" />
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="flex">
-                                            <div>numero</div>
-                                            <p>texto</p>
-                                            <img src="" alt="img" />
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="flex">
-                                            <div>numero</div>
-                                            <p>texto</p>
-                                            <img src="" alt="img" />
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                      </dialog>
                     </div>
                   </div>
                 </div>
               </div>
-            )}
+            </div>
+          )}
 
-            {/* contenido Persona Juridica */}
-            
-              {isJuridicaOpen && (
-                <div ref={juridicaRef} className="bg-white text-black">
-                  <h1>Contenido Persona Jurídica</h1>
-                  <div className="collapse collapse-arrow bg-base-200">
-                    <input type="radio" name="my-accordion-2" defaultChecked />
-                    <div className="collapse-title text-xl font-medium">
-                      Click to open this one and close others
-                    </div>
-                    <div className="collapse-content">
-                      <p>hello</p>
-                    </div>
-                  </div>
-                  <div className="collapse collapse-arrow bg-base-200">
-                    <input type="radio" name="my-accordion-2" />
-                    <div className="collapse-title text-xl font-medium">
-                      Click to open this one and close others
-                    </div>
-                    <div className="collapse-content">
-                      <p>hello</p>
-                    </div>
-                  </div>
-                  <div className="collapse collapse-arrow bg-base-200">
-                    <input type="radio" name="my-accordion-2" />
-                    <div className="collapse-title text-xl font-medium">
-                      Click to open this one and close others
-                    </div>
-                    <div className="collapse-content">
-                      <p>hello</p>
-                    </div>
-                  </div>
+          {/* contenido Persona Juridica */}
+
+          {isJuridicaOpen && (
+            <div ref={juridicaRef} className="bg-white text-black">
+              <h1>Contenido Persona Jurídica</h1>
+              <div className="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" defaultChecked />
+                <div className="collapse-title text-xl font-medium">
+                  Click to open this one and close others
                 </div>
-              )}
-            
+                <div className="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div className="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div className="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div className="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+              <div className="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div className="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div className="collapse-content">
+                  <p>hello</p>
+                </div>
+              </div>
+            </div>
+          )}
         </section>
 
         <section class="bg-gray-100 py-8">

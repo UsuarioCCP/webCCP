@@ -7,6 +7,7 @@ import { Historia } from './Paginas/Institucional/Historia';
 import { QuienesSomos } from './Paginas/Institucional/QuinesSomos';
 import { PoliticaCalidad } from './Paginas/Institucional/PoliticaCalidad';
 import { Jurisdiccion } from './Paginas/Institucional/Jurisdicción';
+
 // import { Footer } from './Componentes/Footer';
 // import axios from 'axios';
 import './App.css';
@@ -29,7 +30,6 @@ function App() {
         </div>
         {/* <Footer /> */}
       </BrowserRouter>
-
     </div>
   );
 }
