@@ -4,7 +4,7 @@ import "./styles.css";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <div className="relative z-50">
+    <div className="relative z-40">
       <footer className="footer footer-one p-10 text-base-content justify-items-center">
         <nav className="text-white ">
           <h6 className="text-gradient-rose text-lg font-semibold">
