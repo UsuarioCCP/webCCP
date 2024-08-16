@@ -191,18 +191,18 @@ const Jurisdiccion = () => {
           <h2 className="text-3xl text-gradient-rose font-bold m-8 text-center drop-shadow-xl">
             Nuestra Jusrisdicción
           </h2>
-          <p className="text-center my-10 mx-48 leading-loose">
+          <p className="text-center mt-5 mx-48 leading-loose">
             La Jurisdicción de la Cámara de Comercio de Pamplona, fue
             establecida por medio del decreto 74 de 1976, Artículo 27, la cual
             comprende los municipios de Pamplona, Bochalema, Chitagá, Cácota,
             Labateca, Mutiscua, Cucutilla, Pamplonita, Silos y Toledo, en el
             Departamento Norte de Santander.
           </p>
+          <div className="flex divider divider-neutral opacity-30 justify-center mx-36"></div>
           <div className="relative flex justify-center w-full h-auto">
             <MapComponent onMunicipioClick={handleMunicipioClick} />
           </div>
         </div>
-
         {selectedMunicipio && (
           <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
             <article className="bg-gradient-rose rounded-lg p-[1px] shadow-xl w-full max-w-lg">
