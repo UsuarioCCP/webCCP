@@ -15,3 +15,16 @@
     top: 0;
     left: 0;
    }
+
+   .svg-container {
+    width: 200px; /* Ajusta el tamaño según necesites */
+    height: 200px; /* Ajusta el tamaño según necesites */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .svg-container svg {
+    position: absolute;
+    top: -10px; /* Ajusta según necesites */
+    left: -10px; /* Ajusta según necesites */
+  }
