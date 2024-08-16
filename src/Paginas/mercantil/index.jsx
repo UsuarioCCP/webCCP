@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ScrollMercantil } from "../../Componentes/ScrollMercantil";
-import { Prueba } from "../../Componentes/prueba/prueba";
 import "./styles.css";
 
 const Mercantil = () => {
