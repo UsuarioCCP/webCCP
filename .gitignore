@@ -1,8 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 #imagenes
-/src/assets/
-
+# /src/assets/
+mapa.png
 
 # dependencies
 /node_modules
