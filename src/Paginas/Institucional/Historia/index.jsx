@@ -8,29 +8,29 @@ const Historia = () => {
   return (
     <LayoutGeneral>
       <div className="p-4 bg-white rounded-lg shadow-lg bg-historia">
-        <div className="absolute overlay-historia"></div>
+        <div className="fixed overlay-historia w-full h-svh"></div>
         <div className="relative mb-10 z-30 pt-2">
           <h2 className="text-3xl text-gradient-rose font-bold m-8 text-center drop-shadow-xl">
             Nuestra Historia
           </h2>
-          <p className="text-center my-10 mx-48 leading-loose">
+          <p className="text-center my-10 mx-2 lg:mx-48 leading-loose">
             La Jurisdicción de la Cámara de Comercio de Pamplona, fue
             establecida por medio del decreto 74 de 1976, Artículo 27, la cual
             comprende los municipios de Pamplona, Bochalema, Chitagá, Cácota,
             Labateca, Mutiscua, Cucutilla, Pamplonita, Silos y Toledo, en el
             Departamento Norte de Santander.
           </p>
-          <div className="flex divider divider-neutral opacity-30 justify-center mx-36"></div>
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start bg-gray-100 bg-opacity-70 shadow-lg border rounded m-10 px-28">
+          <div className="flex divider divider-neutral opacity-30 justify-center mx-5 lg:mx-36"></div>
+          <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start bg-gray-100 bg-opacity-70 shadow-lg border rounded lg:m-10 lg:px-28">
             <div className="flex flex-wrap items-center">
-              <div className="w-full lg:w-1/2 lg:pr-4">
+              <div className="w-full lg:w-1/2 ">
                 <img
                   src="https://i.postimg.cc/tJvrzYkB/casa-velez-2.jpg"
                   alt="Historia de la entidad"
                   className="w-full h-auto rounded-lg mb-4 lg:mb-0"
                 />
               </div>
-              <div className="w-full lg:w-1/2 lg:pl-4 px-10 py-10">
+              <div className="w-full lg:w-1/2 p-5 lg:px-10 lg:py-10">
                 <p className="text-justify p-2">
                   La Cámara de Comercio de Pamplona fue fundada gracias a la
                   iniciativa de los comerciantes locales y la destacada gestión

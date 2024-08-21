@@ -8,7 +8,7 @@ const CarouselMunicipios = ({ images }) => {
               id={`slide${index + 1}`}
               className="carousel-item relative w-full"
             >
-              <img src={image} className="w-full h-40" alt={`Slide ${index + 1}`} />
+              <img src={image} className="w-full h-40 object-cover" alt={`Slide ${index + 1}`} />
               <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <a
                   href={`#slide${(index - 1 + images.length) % images.length + 1}`}

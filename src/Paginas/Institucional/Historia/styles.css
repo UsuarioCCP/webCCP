@@ -1,6 +1,6 @@
 .bg-historia{
     background-image: url('https://i.postimg.cc/QMBjgTqy/Pamplona-antigua.jpg');
-    background-position: calc(0px -80px);
+    background-position: calc(0px);
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
@@ -10,8 +10,6 @@
     background-color: transparent;
     background-image: linear-gradient(180deg, #F9FBFFB8 42%, #F9FBFF 86%);
     opacity: 1;
-    height: 180%;
-    width: 100%;
     top: 0;
     left: 0;
    }

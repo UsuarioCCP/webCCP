@@ -8,7 +8,7 @@ const municipios = [
   {
     id: "Cucutilla",
     nombre: "Cucutilla",
-    descripcion: "Noble, cordial y trabajadora",
+    descripcion: "Despensa Agricola",
     imagen1: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
     imagen2: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
     imagen3: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
@@ -17,8 +17,8 @@ const municipios = [
   {
     id: "Chitaga",
     nombre: "Chitaga",
-    descripcion: "Noble, cordial y trabajadora",
-    imagen1: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
+    descripcion: "Encanto a su paso",
+    imagen1: "https://i.postimg.cc/QCd45pQB/Chitaga.jpg",
     imagen2: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
     imagen3: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
     // otras imágenes...
@@ -26,17 +26,17 @@ const municipios = [
   {
     id: "Pamplona",
     nombre: "Pamplona",
-    descripcion: "Noble, cordial y trabajadora",
-    imagen1: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
-    imagen2: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
-    imagen3: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
+    descripcion: "Noble, Leal y Valeroza",
+    imagen1: "https://i.postimg.cc/PxYh9n9b/PAMPLONA.jpg",
+    imagen2: "",
+    imagen3: "",
     // otras imágenes...
   },
   {
     id: "Pamplonita",
     nombre: "Pamplonita",
-    descripcion: "Noble, cordial y trabajadora",
-    imagen1: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
+    descripcion: "Maravilla sobrenatural",
+    imagen1: "https://i.postimg.cc/nzH0bvwd/Pamplonita.jpg",
     imagen2: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
     imagen3: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
     // otras imágenes...
@@ -44,8 +44,8 @@ const municipios = [
   {
     id: "Toledo",
     nombre: "Toledo",
-    descripcion: "Noble, cordial y trabajadora",
-    imagen1: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
+    descripcion: "Tierra del santo cristo",
+    imagen1: "https://i.postimg.cc/8cc4sTGM/Toledo.jpg",
     imagen2: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
     imagen3: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
     // otras imágenes...
@@ -53,8 +53,8 @@ const municipios = [
   {
     id: "Labateca",
     nombre: "Labateca",
-    descripcion: "Noble, cordial y trabajadora",
-    imagen1: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
+    descripcion: "Tierra prodiga y bendita",
+    imagen1: "https://i.postimg.cc/hPwyzQfj/Labateca.jpg",
     imagen2: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
     imagen3: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
     // otras imágenes...
@@ -62,8 +62,8 @@ const municipios = [
   {
     id: "Silos",
     nombre: "Silos",
-    descripcion: "Noble, cordial y trabajadora",
-    imagen1: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
+    descripcion: "Terruño de ensueño",
+    imagen1: "https://i.postimg.cc/nzH0bvwd/Pamplonita.jpg",
     imagen2: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
     imagen3: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
     // otras imágenes...
@@ -71,8 +71,8 @@ const municipios = [
   {
     id: "Cacota",
     nombre: "Cacota",
-    descripcion: "Noble, cordial y trabajadora",
-    imagen1: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
+    descripcion: "Magia y encanto",
+    imagen1: "https://i.postimg.cc/Tw9NpkDM/Cacota.jpg",
     imagen2: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
     imagen3: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
     // otras imágenes...
@@ -80,8 +80,8 @@ const municipios = [
   {
     id: "Mutiscua",
     nombre: "Mutiscua",
-    descripcion: "Noble, cordial y trabajadora",
-    imagen1: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
+    descripcion: "Conocerla es quererla",
+    imagen1: "https://i.postimg.cc/SxMZWQMG/Mutiscua.jpg",
     imagen2: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
     imagen3: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
     // otras imágenes...
@@ -89,8 +89,8 @@ const municipios = [
   {
     id: "Bochalema",
     nombre: "Bochalema",
-    descripcion: "Noble, cordial y trabajadora",
-    imagen1: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
+    descripcion: "Paraiso turistico",
+    imagen1: "https://i.postimg.cc/YSQsw22S/bochalema.webp",
     imagen2: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
     imagen3: "https://i.postimg.cc/pXycLJV4/Cucutilla.jpg",
     // otras imágenes...
@@ -162,9 +162,11 @@ const MapComponent = ({ onMunicipioClick }) => {
 
   return (
     <div className="relative">
-      <MapaJurisdiccionSVG ref={svgRef} width="130%" height="auto" />
+      <div className="w-5/6 md:w-full">
+        <MapaJurisdiccionSVG ref={svgRef} width="130%" height="auto" />
+      </div>
       {hoveredMunicipio && (
-        <div className="absolute text-white bg-black px-5 py-1 rounded-md pointer-events-none" style={{ top: '80px', left: '80%', transform: 'translateX(-50%)' }}>
+        <div className="absolute z-20 text-white font-semibold bg-gradient-rose px-5 py-1 rounded-md pointer-events-none top-16 lg:top-20 left-48 md:left-60 translate-y-4">
           {hoveredMunicipio.nombre}
         </div>
       )}
@@ -185,22 +187,22 @@ const Jurisdiccion = () => {
 
   return (
     <LayoutGeneral>
-      <div className="p-4 bg-white rounded-lg shadow-lg bg-jurisdiccion">
-        <div className="absolute overlay-jurisdiccion"></div>
-        <div className="relative mb-10 z-30 pt-2">
+      <div className="px-4 bg-white rounded-lg shadow-lg bg-jurisdiccion">
+        <div className="fixed overlay-jurisdiccion w-full h-svh"></div>
+        <div className="relative z-30 pt-2">
           <h2 className="text-3xl text-gradient-rose font-bold m-8 text-center drop-shadow-xl">
             Nuestra Jusrisdicción
           </h2>
-          <p className="text-center mt-5 mx-48 leading-loose">
+          <p className="text-center mt-5 lg:mx-48 leading-loose">
             La Jurisdicción de la Cámara de Comercio de Pamplona, fue
             establecida por medio del decreto 74 de 1976, Artículo 27, la cual
             comprende los municipios de Pamplona, Bochalema, Chitagá, Cácota,
             Labateca, Mutiscua, Cucutilla, Pamplonita, Silos y Toledo, en el
             Departamento Norte de Santander.
           </p>
-          <div className="flex divider divider-neutral opacity-30 justify-center mx-36"></div>
+          <div className="flex divider divider-neutral opacity-30 justify-center mx-5 lg:mx-36"></div>
           <div className="relative flex justify-center w-full h-auto">
-            <MapComponent onMunicipioClick={handleMunicipioClick} />
+            <MapComponent onMunicipioClick={handleMunicipioClick}  />
           </div>
         </div>
         {selectedMunicipio && (
