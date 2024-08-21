@@ -8,7 +8,7 @@ const Header = () => {
 
 
  return (
-    <header className="sticky top-0 z-40 shadow-lg ">
+    <header className="sticky top-0 z-50 shadow-lg ">
       <div
       className="navbar bg-white h-[15vh] shadow-lg ">
         <div className="navbar-start">

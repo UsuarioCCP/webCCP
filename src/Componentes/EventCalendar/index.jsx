@@ -50,17 +50,17 @@ const EventCalendar = ({ events }) => {
     }, [events, allMonths]);
 
     return (
-        <div className="grid justify-items-center md:grid-cols-1 lg:grid-cols-2 w-11/12 h-[80vh] gap-10 ml-10 mr-5 mx-10">
+        <div className="grid justify-items-center md:grid-cols-1 lg:grid-cols-2 lg:w-11/12 lg:h-[80vh] gap-10 mx-2 lg:mx-10">
             <div className="col-span-1 flex flex-wrap justify-center items-center self-center w-full">
                 <h2 className="mb-5 text-2xl font-bold">Próximo evento</h2>
                 {selectedEvent ? (
                     <div className="event-card card lg:card-side bg-base-100 shadow-xl h-[60vh]">
-                        <figure className="w-full md:w-1/2 flex-shrink-0 m-2">
+                        <figure className="w-full md:w-5/6 lg:w-1/2 flex-shrink-0 m-2">
                             <img src={selectedEvent.src} alt={selectedEvent.title} className="w-full h-auto object-cover" />
                         </figure>
-                        <div className="card-body px-2 py-5 flex flex-col">
+                        <div className="card-body px-5 py-2 m-2 flex flex-col">
                             <h2 className="card-title line-clamp-3">{selectedEvent.title}</h2>
-                            <p className="overflow-hidden text-ellipsis  text-balance ... w-5/6 max-h-64">{selectedEvent.description}</p>
+                            <p className="overflow-hidden text-ellipsis text-balance ... lg:w-5/6 max-h-64">{selectedEvent.description}</p>
                             <p><strong>Fecha:</strong> {format(parseISO(selectedEvent.date), 'dd/MM/yyyy')}</p>
                             <p><strong>Hora:</strong> {selectedEvent.time}</p>
                             <p><strong>Tema:</strong> {selectedEvent.theme}</p>
@@ -77,9 +77,9 @@ const EventCalendar = ({ events }) => {
                 )}
             </div>
             <div className="col-span-1 flex flex-wrap justify-start w-full items-center overflow-y-auto">
-                <div className="w-10/12 px-5 pt-5 flex flex-wrap justify-center items-center self-center">
-                    <h2 className="mb-5 text-2xl font-bold">Agendate con tus eventos favoritos</h2>
-                    <div className="grid grid-cols-3 gap-3">
+                <div className="lg:w-10/12 px-5 py-5 flex flex-wrap justify-center items-center self-center">
+                    <h2 className="mb-5 text-2xl font-bold text-center">Agendate con tus eventos favoritos</h2>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
                         {allMonths.map((month, index) => (
                             <div key={index} className="bg-gray-100 mb-1 border border-gray-300 rounded-md shadow-md flex flex-col h-[6.5rem]">
                                 <h2 className={`text-xl text-center text-white uppercase font-semibold h-8 ${index < 3 || (index >= 6 && index < 9) ? 'gradient-rose' : 'gradient-blue'}`}>

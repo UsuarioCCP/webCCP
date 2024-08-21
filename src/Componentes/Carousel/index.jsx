@@ -22,17 +22,17 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
-    }, 20000); // Cambia cada 5 segundos
+    }, 2000000); // Cambia cada 5 segundos
     return () => clearInterval(interval);
   }, [items.length]);
 
     return (
       <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden"> {/* Posición absoluta para ser fondo */}
       <EfectCloud />
-      <div className="relative z-5 flex flex-wrap md:flex-nowrap container m-0">
-        <div className="flex flex-col lg:flex-row items-center justify-start">
+      <div className="relative z-5 flex flex-wrap md:flex-nowrap m-0">
+        <div className="flex w-full lg:w-auto flex-col lg:flex-row items-center justify-start">
           <div className="flex flex-col md:flex-row md:flex-wrap items-center w-full lg:w-80 m-0 lg:mr-8 mb-8 lg:mb-0 bg-gradient-rose bg-opacity-75 p-4 md:rounded-r-[5rem] h-[80vh]">
-            <div className="lg:absolute md:relative lg:left-36 bg-white border-4 border-white rounded-full w-full md:w-[20rem] h-80 md:h-[20rem] shadow-lg">
+            <div className="lg:absolute md:relative lg:left-32 bg-white border-4 border-white rounded-full w-80 lg:w-96 h-80 lg:h-96 shadow-lg">
               <div className="contents rounded-full w-full md:w-[25rem] h-[25rem] overflow-hidden items-center justify-center">
                 <motion.div
                   key={currentIndex}
@@ -49,7 +49,7 @@ const Carousel = () => {
           </div>
         </div>
 
-        <div className="absolute md:relative flex items-center justify-center w-full md:w-9/12 bottom-0 ">
+        <div className="absolute md:relative flex items-center justify-center w-full md:w-10/12 bottom-0 ">
           <div className="flex flex-wrap content-center justify-center w-full lg:w-3/5 h-[40vh] md:h-[50vh] lg:h-[60vh] mb-2 md:mb-8 lg:mb-0 p-0 md:p-5 rounded-xl backdrop-contrast-[.60]">
             <motion.h1
               key={`title-${currentIndex}`}

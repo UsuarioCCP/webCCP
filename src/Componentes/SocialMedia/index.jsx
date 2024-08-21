@@ -31,7 +31,7 @@ const SocialMedia = () => {
         <div className="fb-page my-4 mx-1 shadow-2xl"
             data-href="https://www.facebook.com/p/Camara-de-Comercio-de-Pamplona-100071759633115/"
             data-tabs="timeline, events"
-            data-width="450"
+            data-width="350"
             data-height="600"
             data-small-header="true"
             data-adapt-container-width="true"

@@ -47,13 +47,13 @@ const NewsCard = ({ selectedCategory }) => {
   };
 
   return (
-    <div className="grid md:grid-col-1 lg:grid-cols-2 gap-4 justify-items-center place-content-center mb-5">
+    <div className="grid grid-col-1 lg:grid-cols-2 gap-4 justify-items-center place-content-center mb-5">
       {/* Carousel */}
       <div className="col-span-1">
-        <div className="h-[80vh] w-11/12 carousel carousel-vertical rounded-box shadow-2xl">
+        <div className="h-[80vh] w-full lg:w-11/12 carousel carousel-vertical rounded-box shadow-2xl">
           {/* Selected News Card */}
           {selectedNews && (
-            <div className="grid content-evenly justify-items-center h-[80vh] col-span-2 p-4 border border-gray-300 rounded-md bg-white shadow-lg">
+            <div className="grid content-evenly justify-items-center h-[80vh] col-span-2 p-2 lg:p-4 border border-gray-300 rounded-md bg-white shadow-lg">
               <h2 className="text-2xl font-bold mb-2 ">{selectedNews.title}</h2>
               <img src={selectedNews.src} alt={selectedNews.title} className="w-full h-64 object-cover mb-4" />
               <p className="text-gray-700 mb-2">{selectedNews.fecha}</p>
@@ -64,7 +64,7 @@ const NewsCard = ({ selectedCategory }) => {
       </div>
 
       {/* News card */}
-      <div className="col-span-1 overflow-y-scroll h-[80vh] shadow-2xl ">
+      <div className="col-span-1 overflow-y-scroll h-[80vh] shadow-2xl w-11/12 md:w-full ">
         {filteredNews.map((item, index) => (
           <div
             key={item.id}
@@ -76,7 +76,7 @@ const NewsCard = ({ selectedCategory }) => {
             <div className="w-32">
               <img src={item.src} alt="News" className="w-[7rem] h-full object-cover" />
             </div>
-            <div className="card-body w-72 p-1 gap-1">
+            <div className="card-body w-60 p-1 gap-1">
               <div className="stat-desc">{item.fecha}</div>
               <h2 className="text-sm font-semibold text-ellipsis overflow-hidden truncate">{item.title}</h2>
               <div className="flex flex-nowrap card-actions">
