@@ -7,7 +7,7 @@ const PoliticaCalidad = () => {
   return (
     <LayoutGeneral>
       <div className="p-4 bg-white rounded-lg shadow-lg bg-politica-calidad">
-        <div className="absolute overlay-politica-calidad"></div>
+        <div className="fixed overlay-politica-calidad w-full h-svh"></div>
         <div className="relative mb-10 z-30 pt-2">
           <h2 className="text-3xl text-gradient-rose font-bold m-8 text-center drop-shadow-xl ">
             Política de Calidad
