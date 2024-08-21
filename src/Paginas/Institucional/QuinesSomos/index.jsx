@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { LayoutGeneral } from "../../../Layouts/LayoutGeneral";
 import { CardFlip } from "../../../Componentes/CardFlip";
-import QuinesSomos from "../../../Assets/Images/Quienes-somos.png";
+// import QuinesSomos from "../../../Assets/Images/Quienes-somos.png";
 import "./styles.css";
 
 const ListItem = ({ text, colorClass = "text-primary" }) => {
@@ -94,7 +94,7 @@ const QuienesSomos = () => {
             <figure className="flex flex-wrap justify-center mt-20">
               <img
                 className="content-end rotate-90 sm:rotate-0 w-80 sm:w-full "
-                src={QuinesSomos}
+                src="https://i.postimg.cc/mktmS0Kz/Quienes-somos.png"
                 alt=""
               />
             </figure>

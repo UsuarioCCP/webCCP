@@ -4,7 +4,7 @@ import "./styles.css";
 
 const Historia = () => {
 
-  const CasaVelezDos = 'https://i.postimg.cc/tJvrzYkB/casa-velez-2.jpg';
+  // const CasaVelezDos = 'https://i.postimg.cc/tJvrzYkB/casa-velez-2.jpg';
   return (
     <LayoutGeneral>
       <div className="p-4 bg-white rounded-lg shadow-lg bg-historia">
@@ -25,7 +25,7 @@ const Historia = () => {
             <div className="flex flex-wrap items-center">
               <div className="w-full lg:w-1/2 lg:pr-4">
                 <img
-                  src={CasaVelezDos}
+                  src="https://i.postimg.cc/tJvrzYkB/casa-velez-2.jpg"
                   alt="Historia de la entidad"
                   className="w-full h-auto rounded-lg mb-4 lg:mb-0"
                 />
