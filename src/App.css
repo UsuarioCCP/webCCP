@@ -83,12 +83,12 @@ body{
     background-clip: text;
     color: transparent;
 }
-.text-gradient-rose{
-  background: var(--gradient-rose);
-  background: var(--gradient-rose-webkit);/* Para navegadores con prefijo -webkit- */
-    -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+.text-gradient-rose {
+  background: var(--gradient-rose) !important;
+  background: var(--gradient-rose-webkit) !important; /* Para navegadores con prefijo -webkit- */
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
 }
 .hover-text-gradient-rose:hover{
   background: var(--gradient-rose);

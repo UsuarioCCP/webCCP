@@ -18,7 +18,7 @@ const RecordsCard = () => {
       description: "Formaliza tu negocio y accede a mayores oportunidades.",
       imgSrc: "https://i.postimg.cc/PrFGcGNT/Reg-Mercantil.png",
       link: "/mercantil",
-      imgStyles: "absolute w-72 md:w-[20.05rem] left-[-4rem] md:left-[-9.4rem] md:top-[-6.75rem] z-20"
+      imgStyles: "absolute w-[19.2rem] md:w-[20.05rem] left-[-0.2rem] md:left-[-9.4rem] top-[-6.5rem] md:top-[-6.75rem] z-20 transform scale-x-[-1] md:scale-x-[1]"
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ const RecordsCard = () => {
       description: "Compite en licitaciones y proyectos gubernamentales.",
       imgSrc: "https://i.postimg.cc/rp4LxhVc/Reg-Turismo.png",
       link: "/turismo",
-      imgStyles: "absolute w-72 md:w-[20.1rem] left-[-6.6rem] top-[-6.4rem] z-20"
+      imgStyles: "absolute w-[19.4rem] md:w-[20.1rem] left-[-6.3rem] top-[-6.3rem] md:left-[-3rem] md:top-[-6.4rem] lg:left-[-6.6rem] lg:top-[-6.4rem] z-20 transform scale-x-[1] md:scale-x-[-1] lg:scale-x-[1]"
     },
     {
       id: 3,
@@ -42,12 +42,12 @@ const RecordsCard = () => {
       description: "Impulsa tu causa y accede a beneficios fiscales.",
       imgSrc: "https://i.postimg.cc/65QJY6WM/RegESADL.png",
       link: "/entidades",
-      imgStyles: "absolute w-72 md:w-[20.05rem] right-[-9.1rem] top-[-7.01rem] z-20"
+      imgStyles: "absolute w-72 md:w-[20.05rem] right-[-9.1rem] top-[-7.01rem] md:right-[-9.1rem] md:top-[-7.01rem] z-20"
     }
   ];
 
   return (
-    <div className="grid md:grid-cols-2 md:gap-x-28 md:gap-y-40 lg:grid-cols-4">
+    <div className="grid md:grid-cols-2 mt-20 md:m-0 gap-44 md:gap-x-20 md:gap-y-48 lg:gap-x-28 lg:gap-y-40 lg:grid-cols-4">
       {records.map((record) => (
         <div key={record.id} className="col-span-1 relative">
           <div className="flex transform transition-all duration-500 hover:scale-105 cursor-pointer rounded-lg">
@@ -58,8 +58,8 @@ const RecordsCard = () => {
                 className="drop-shadow-xl"
               />
             </div>
-            <div className="relative w-full max-w-[10.5rem] bg-opacity-70 backdrop-blur-md fondo-card shadow-xl rounded-lg overflow-hidden z-10">
-              <div className="relative z-10 px-1 py-3">
+            <div className="relative w-[10.2rem] md:w-full bg-opacity-70 backdrop-blur-md fondo-card shadow-xl rounded-lg overflow-hidden z-10">
+              <div className="relative z-10 px-1 py-[0.8rem] md:py-3">
                 <div className="flex flex-wrap justify-center content-start sm:mt-3 w-40 h-[10.3rem]">
                   <h2 className="lg:text-base sm:text-sm font-bold text-dorado mb-1 text-center">
                     {record.title}
