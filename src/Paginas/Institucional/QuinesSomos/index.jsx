@@ -84,119 +84,124 @@ const QuienesSomos = () => {
       <div className="bg-quienes-somos">
         <div className="fixed overlay-quienes-somos z-10 w-full h-svh"></div>
         <div className="relative z-20 pt-2">
-        <h2 className="text-3xl text-gradient-rose font-bold m-8 text-center drop-shadow-xl">
-          ¿Quienes Somos?
-        </h2>
-        <p className="text-center">Descubre cómo desde la Cámara de Comercio de Pamplona trabajamos para impulsar el crecimiento económico y empresarial de nuestra región</p>
-        <div className="flex divider divider-neutral opacity-30 justify-center mx-36"></div>
-        <div className="grid justify-items-center grid-cols-1 lg:grid-cols-5">
-          <div className="col-span-2 lg:my-2 h-auto">
-            <figure className="flex flex-wrap justify-center mt-20">
-              <img
-                className="content-end rotate-90 sm:rotate-0 w-80 sm:w-full "
-                src="https://i.postimg.cc/mktmS0Kz/Quienes-somos.png"
-                alt=""
-              />
-            </figure>
-            <div className="">
-              {/* Valores */}
-              <div className=" flex flex-wrap justify-center py-8 sm:py-2 values-list">
-                <h2 className="text-center text-2xl text-gradient-rose font-semibold leading-8 text-gray-900 mb-7">
-                  Valores Institucionales
-                </h2>
-                <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                  <div className="inner flex" ref={innerRef}>
-                    {valores.map((valor, index) => (
-                      <ListItem
-                        key={index}
-                        text={valor}
-                        colorClass="text-red-700"
-                      />
-                    ))}
+          <h2 className="text-3xl text-gradient-rose font-bold m-8 text-center drop-shadow-xl">
+            ¿Quienes Somos?
+          </h2>
+          <p className="text-center">
+            Descubre cómo desde la Cámara de Comercio de Pamplona trabajamos
+            para impulsar el crecimiento económico y empresarial de nuestra
+            región
+          </p>
+          <div className="flex divider divider-neutral opacity-30 justify-center mx-36"></div>
+          <div className="grid justify-items-center grid-cols-1 lg:grid-cols-5">
+            <div className="col-span-2 lg:my-2 h-auto">
+              <figure className="flex flex-wrap justify-center mt-20">
+                <img
+                  className="content-end rotate-90 sm:rotate-0 w-80 sm:w-full "
+                  src="https://i.postimg.cc/mktmS0Kz/Quienes-somos.png"
+                  alt=""
+                />
+              </figure>
+              <div className="">
+                {/* Valores */}
+                <div className=" flex flex-wrap justify-center py-8 sm:py-2 values-list">
+                  <h2 className="text-center text-2xl text-gradient-rose font-semibold leading-8 text-gray-900 mb-7">
+                    Valores Institucionales
+                  </h2>
+                  <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                    <div className="inner flex" ref={innerRef}>
+                      {valores.map((valor, index) => (
+                        <ListItem
+                          key={index}
+                          text={valor}
+                          colorClass="text-red-700"
+                        />
+                      ))}
+                    </div>
+                    <div className="fade"></div>
                   </div>
-                  <div className="fade"></div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="col-span-3">
-            <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start">
-              <div className="justify-center w-80 lg:w-full">
-                {/* <div className="w-full lg:pr-4 my-10">
+            <div className="col-span-3">
+              <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start">
+                <div className="justify-center w-80 lg:w-full">
+                  {/* <div className="w-full lg:pr-4 my-10">
                     <img src="ruta/a/tu/imagen-vision.jpg" alt="Visión" className="w-full h-auto rounded-lg mb-4 lg:mb-0" />
                   </div> */}
-                <div className="w-full lg:w-5/6">
-                  <div className="bg-gray-100 bg-opacity-70 shadow-lg border rounded my-8 py-5 px-10">
-                    <h3 className="text-2xl text-gradient-rose font-semibold mb-2">
-                      Misión
-                    </h3>
-                    <p className="text-justify ">
-                      Somos una organización privada, gremial, Sin Ánimo de
-                      Lucro, depositaria de fe pública, dedicada a la prestación
-                      eficiente de los servicios del Registro Único Empresarial
-                      y Social (RUES), así como a la gestión, apoyo y desarrollo
-                      de programas y proyectos para la generación de
-                      oportunidades para potenciar el Emprendimiento, el
-                      Fortalecimiento y la Aceleración empresarial de la Región,
-                      apoyados en la tecnología e infraestructura adecuada, con
-                      un equipo humano capacitado y comprometido que actúa con
-                      principios y valores Corporativos.
-                    </p>
-                  </div>
-                  <div className="bg-gray-100 bg-opacity-70 shadow-lg border rounded my-8 py-5 px-10">
-                    <h3 className="text-2xl text-gradient-rose font-semibold mb-2">
-                      Visión
-                    </h3>
-                    <p className="text-justify">
-                      Para el año 2026 seremos reconocidos como la Organización
-                      gremial líder en el desarrollo integral de nuestra región,
-                      mediante el acompañamiento de proyectos de emprendimiento,
-                      fortalecimiento y aceleración empresarial; enmarcados en
-                      una política de modernización de los servicios
-                      registrales, el mejoramiento continuo y una cultura
-                      organizacional de calidad.
-                    </p>
-                  </div>
-                  <div className="bg-gray-100 bg-opacity-70 shadow-lg border rounded my-8 py-5 px-10">
-                    <h3 className="text-2xl text-gradient-rose font-semibold mb-2">
-                      Proposito MEGA
-                    </h3>
-                    <p className="text-justify">
-                      Aumentar la satisfacción del cliente a través de la
-                      aplicación eficaz del Sistema de Gestión de Calidad de los
-                      Servicios Registrales, incluidos los procesos para la
-                      mejora continua, asegurando la conformidad de los
-                      requisitos del cliente, los legales y los reglamentarios
-                      aplicables; a su vez potenciar el Emprendimiento, el
-                      Fortalecimiento y la Aceleración empresarial de la Región,
-                      siendo generadores de Desarrollo y Calidad de vida de la
-                      población.
-                    </p>
+                  <div className="w-full lg:w-5/6">
+                    <div className="bg-gray-100 bg-opacity-70 shadow-lg border rounded my-8 py-5 px-10">
+                      <h3 className="text-2xl text-gradient-rose font-semibold mb-2">
+                        Misión
+                      </h3>
+                      <p className="text-justify ">
+                        Somos una organización privada, gremial, Sin Ánimo de
+                        Lucro, depositaria de fe pública, dedicada a la
+                        prestación eficiente de los servicios del Registro Único
+                        Empresarial y Social (RUES), así como a la gestión,
+                        apoyo y desarrollo de programas y proyectos para la
+                        generación de oportunidades para potenciar el
+                        Emprendimiento, el Fortalecimiento y la Aceleración
+                        empresarial de la Región, apoyados en la tecnología e
+                        infraestructura adecuada, con un equipo humano
+                        capacitado y comprometido que actúa con principios y
+                        valores Corporativos.
+                      </p>
+                    </div>
+                    <div className="bg-gray-100 bg-opacity-70 shadow-lg border rounded my-8 py-5 px-10">
+                      <h3 className="text-2xl text-gradient-rose font-semibold mb-2">
+                        Visión
+                      </h3>
+                      <p className="text-justify">
+                        Para el año 2026 seremos reconocidos como la
+                        Organización gremial líder en el desarrollo integral de
+                        nuestra región, mediante el acompañamiento de proyectos
+                        de emprendimiento, fortalecimiento y aceleración
+                        empresarial; enmarcados en una política de modernización
+                        de los servicios registrales, el mejoramiento continuo y
+                        una cultura organizacional de calidad.
+                      </p>
+                    </div>
+                    <div className="bg-gray-100 bg-opacity-70 shadow-lg border rounded my-8 py-5 px-10">
+                      <h3 className="text-2xl text-gradient-rose font-semibold mb-2">
+                        Proposito MEGA
+                      </h3>
+                      <p className="text-justify">
+                        Aumentar la satisfacción del cliente a través de la
+                        aplicación eficaz del Sistema de Gestión de Calidad de
+                        los Servicios Registrales, incluidos los procesos para
+                        la mejora continua, asegurando la conformidad de los
+                        requisitos del cliente, los legales y los reglamentarios
+                        aplicables; a su vez potenciar el Emprendimiento, el
+                        Fortalecimiento y la Aceleración empresarial de la
+                        Región, siendo generadores de Desarrollo y Calidad de
+                        vida de la población.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        {/* Principios */}
-        <div className="grid bg-white shadow-lg border rounded  py-5 px-10 ">
-          <h3 className="text-2xl text-center text-gradient-rose font-semibold">
-            Principios Institucionales
-          </h3>
-          <div className="flex justify-center my-16">
-            <div className="flex flex-wrap gap-10">
-              {principios.map((principio, index) => (
-                <div key={index}>
-                  <CardFlip
-                    textOne={principio.Titulo}
-                    textTwo={principio.Descripción}
-                  />
-                </div>
-              ))}
+          {/* Principios */}
+          <div className="grid bg-white shadow-lg border rounded  py-5 px-10 ">
+            <h3 className="text-2xl text-center text-gradient-rose font-semibold">
+              Principios Institucionales
+            </h3>
+            <div className="flex justify-center my-16">
+              <div className="flex flex-wrap gap-10">
+                {principios.map((principio, index) => (
+                  <div key={index}>
+                    <CardFlip
+                      textOne={principio.Titulo}
+                      textTwo={principio.Descripción}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </LayoutGeneral>
