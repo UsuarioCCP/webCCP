@@ -32,7 +32,7 @@ const RecordsCard = () => {
       id: 3,
       title: "Registro Unico Proponentes",
       description: "Compite en licitaciones y proyectos gubernamentales.",
-      imgSrc: "https://i.postimg.cc/G21nQktD/Reg-Proponente.png",
+      imgSrc: "https://i.postimg.cc/bJrF3Qkp/Reg-Proponente.png",
       link: "/proponentes",
       imgStyles: "absolute w-72 md:w-[20.1rem] left-[-6.6rem] top-[-6.5rem] z-20"
     },
