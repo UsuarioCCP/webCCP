@@ -11,7 +11,7 @@ const RecordSection = () => {
             </h2> 
             <div className="grid items-end lg:w-full md:w-11/12 lg:h-[45vh] md:h-[65vh]">
                 <div className="grid place-content-center">
-                    <RecordsCard />
+                    <RecordsCard/>
                     {/* <button className="btn btn-wide text-black hover-gradient-red ">Button</button>
                     <button className="btn btn-wide btn-accent">Button</button>
                     <button className="btn btn-wide btn-accent">Button</button> */}
