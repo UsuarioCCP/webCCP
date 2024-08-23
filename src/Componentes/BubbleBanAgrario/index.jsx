@@ -7,7 +7,7 @@ const BubbleBanAgrario = () => {
             onClick={() => document.getElementById("my_modal_3").showModal()}
         >
           <div className="w-20 rounded-full">
-            <img src="https://i.postimg.cc/L6RG9kR6/Ban-Agrario.jpg"/>
+            <img src="https://i.postimg.cc/L6RG9kR6/Ban-Agrario.jpg" alt="logo Ban Agrario"/>
           </div>
 
 
@@ -34,6 +34,7 @@ const BubbleBanAgrario = () => {
             <img
               className=""
               src="https://i.postimg.cc/pVmvFJnW/Banner-Ban-Agrario-Dos.webp"
+              alt="Banner Ban Agrario"
             />
           </div>
           <div className="flex justify-center my-2">

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { HoverButton } from "../HoverButton"
-import LogoVUE from "../../Assets/Images/vue-logo.svg"
+// import LogoVUE from "../../Assets/Images/vue-logo.svg"
 import './styles.css'
 
 const Header = () => {
