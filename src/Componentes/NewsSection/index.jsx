@@ -62,11 +62,11 @@ const NewsSection = () => {
           </div>
           <div className="divider"></div>
         </div>
-        <div className="grid justify-items-center col-span-1 w-full my-1 lg:my-2 mx-1 lg:mx-5">
+        <div className="grid justify-items-center col-span-1 w-full my-1 lg:my-2 mx-1">
           <h2 className="text-2xl text-center font-semibold mb-4">Siguenos</h2> 
-          <div className="divider"></div>
+          <div className="divider w-2/3"></div>
             <SocialMedia />
-          <div className="divider"></div>
+            <div className="divider w-2/3"></div>
         </div>
       </div>
     </div>
