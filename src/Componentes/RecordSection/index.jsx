@@ -1,10 +1,12 @@
 import React from "react";
 import { RecordsCard } from "../RecordsCard";
+import { BubbleBanAgrario } from "../BubbleBanAgrario";
 // import { SectionSeparator } from "../SectionSeparator";
 
 const RecordSection = () => {
     return (
         <section className="grid justify-items-center lg:h-[60vh] md:h-[75vh] my-10 md:mt-10 mb-6">
+            <BubbleBanAgrario />
             <h2 className="text-center text-4xl self-center mb-3 font-bold drop-shadow-xl">
                 <span className="text-gradient-rose">Descubre </span> 
                 Todo lo que Necesitas Saber

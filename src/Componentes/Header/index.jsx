@@ -156,7 +156,7 @@ const Header = () => {
         </div>
         <div className="navbar-end">
             <a href="https://www.vue.gov.co/" target="_blank" rel="noreferrer" className=" drop-shadow-2xl m-5">
-                <img src={LogoVUE} alt="VUE" />
+                <img className="border rounded-md w-56" src="https://i.postimg.cc/VkPZHGCf/vue.webp" alt="VUE" />
             </a>
         </div>
       </div>

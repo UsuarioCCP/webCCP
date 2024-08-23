@@ -18,7 +18,7 @@ const RecordsCard = () => {
       description: "Formaliza tu negocio y accede a mayores oportunidades.",
       imgSrc: "https://i.postimg.cc/PrFGcGNT/Reg-Mercantil.png",
       link: "/mercantil",
-      imgStyles: "absolute w-[19.2rem] md:w-[20.05rem] left-[-0.2rem] md:left-[-9.4rem] top-[-6.5rem] md:top-[-6.75rem] z-20 transform scale-x-[-1] md:scale-x-[1]"
+      imgStyles: "absolute w-[19.2rem] md:w-[20.05rem] left-[-0.2rem] md:left-[-9.35rem] top-[-6.5rem] md:top-[-6.74rem] z-20 transform scale-x-[-1] md:scale-x-[1]"
     },
     {
       id: 2,
@@ -42,7 +42,7 @@ const RecordsCard = () => {
       description: "Impulsa tu causa y accede a beneficios fiscales.",
       imgSrc: "https://i.postimg.cc/65QJY6WM/RegESADL.png",
       link: "/entidades",
-      imgStyles: "absolute w-72 md:w-[20.05rem] right-[-9.1rem] top-[-7.01rem] md:right-[-9.1rem] md:top-[-7.01rem] z-20"
+      imgStyles: "absolute w-72 md:w-[20.1rem] right-[-9.1rem] top-[-7.1rem] md:right-[-9.15rem] md:top-[-7rem] z-20"
     }
   ];
 
@@ -50,7 +50,7 @@ const RecordsCard = () => {
     <div className="grid md:grid-cols-2 mt-20 lg:m-0 gap-44 md:gap-x-20 md:gap-y-48 lg:gap-x-28 lg:gap-y-40 lg:grid-cols-4">
       {records.map((record) => (
         <div key={record.id} className="col-span-1 relative">
-          <div className="flex transform transition-all duration-500 hover:scale-105 cursor-pointer rounded-lg">
+          <div className="flex transform transition-all duration-300 hover:scale-105 cursor-pointer rounded-lg">
             <div className={record.imgStyles}>
               <img
                 src={record.imgSrc}
