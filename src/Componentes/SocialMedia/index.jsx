@@ -33,7 +33,7 @@ const SocialMedia = () => {
             data-tabs="timeline, events"
             data-width="350"
             data-height="600"
-            data-small-header="true"
+            data-small-header="false"
             data-adapt-container-width="true"
             data-hide-cover="false"
             data-show-facepile="true">
