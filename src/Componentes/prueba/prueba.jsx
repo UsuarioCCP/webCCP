@@ -9,10 +9,12 @@ const Prueba = () => {
     // URL de la hoja de cálculo publicada en la web
     const sheetUrl = process.env.REACT_APP_NOTICE_MERCANTIL_SHEET_URL;
     console.log('Sheet URL:', sheetUrl);
+    
 
     axios.get(sheetUrl)
       .then(response => {
         // Convierte el CSV a JSON
+        console.log('Raw CSV data:', response.data);
         const parsedData = response.data.split('\n').slice(1).map(row => {
           const cols = row.split(',');
           return {
@@ -28,6 +30,7 @@ const Prueba = () => {
             // Agrega más columnas según sea necesario
           };
         });
+        console.log('Parsed Data:', parsedData);
         setData(parsedData);
       })
       .catch(error => console.error('Error fetching data:', error));
