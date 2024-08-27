@@ -28,10 +28,10 @@ const SocialMedia = () => {
     }, []);
 
     return (
-        <div className="fb-page my-4 mx-1 shadow-2xl"
+        <div className="fb-page w-auto my-4 mx-1 shadow-2xl"
             data-href="https://www.facebook.com/p/Camara-de-Comercio-de-Pamplona-100071759633115/"
             data-tabs="timeline, events"
-            data-width="350"
+            data-width="400"
             data-height="600"
             data-small-header="false"
             data-adapt-container-width="true"
