@@ -8,7 +8,7 @@ import { SectionSeparator } from '../../Componentes/SectionSeparator';
 import { SectionSeparatorEvent } from '../../Componentes/SectionSeparatorEvent';
 import { EventSection } from '../../Componentes/EventSection';
 // import { SectionSeparator } from './Componentes/SectionSeparator';
-import { Prueba } from '../../Componentes/prueba/prueba';
+import { NoticiaMercantil } from '../../Componentes/NoticiaMercantil';
 
 const Home = () => {
     return(
@@ -25,7 +25,7 @@ const Home = () => {
                 <SectionSeparatorEvent />
                 <EventSection />
             </LayoutGeneral>
-            <Prueba />
+            <NoticiaMercantil />
         </div>
     );
 };
