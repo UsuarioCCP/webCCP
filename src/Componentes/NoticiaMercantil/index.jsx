@@ -107,6 +107,7 @@ const NoticiaMercantil = () => {
             <p><span className="font-semibold">Libro:</span> {selectedRecord.libro}</p>
             <p><span className="font-semibold">Registro:</span> {selectedRecord.registro}</p>
             <p><span className="font-semibold">Fecha:</span> {selectedRecord.fecha}</p>
+            <p><span className="font-semibold">Acto:</span> {selectedRecord.acto}</p>
             <p><span className="font-semibold">Noticia:</span> {selectedRecord.noticia}</p>
           </div>
         </div>
