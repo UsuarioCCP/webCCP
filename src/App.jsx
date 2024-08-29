@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './Paginas/home';
+import { NoticiaMercantil } from './Paginas/NoticiaMercantil';
 import { Mercantil } from './Paginas/mercantil';
 import { Employee } from './Paginas/Institucional/Empleados';
 import { Historia } from './Paginas/Institucional/Historia';
@@ -20,6 +21,7 @@ function App() {
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/noticia-mercantil" element={<NoticiaMercantil />} />
             <Route path="/mercantil" element={<Mercantil />} />
             <Route path="/institucional/empleados" element={<Employee />} />
             <Route path="/institucional/historia" element={<Historia />} />

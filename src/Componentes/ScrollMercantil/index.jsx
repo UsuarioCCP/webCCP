@@ -52,7 +52,7 @@ export function ScrollMercantil() {
 
   return (
     <div
-      className="relative h-[70vh] overflow-y-scroll flex bg-black text-white"
+      className="relative h-[65vh] overflow-y-scroll flex bg-zinc-600 text-white my-5 mx-10"
       ref={containerRef}
     >
       <div className="w-1/2 flex flex-col space-y-10 p-10">
@@ -72,7 +72,7 @@ export function ScrollMercantil() {
         ))}
       </div>
 
-      <div className="w-1/2 h-[70vh] flex items-center justify-center sticky top-0">
+      <div className="w-1/2 h-[65vh] flex flex-nowrap items-center justify-center sticky top-0">
         <img
           src={currentImage}
           alt="Relevant visual"
