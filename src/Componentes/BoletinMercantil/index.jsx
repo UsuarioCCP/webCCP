@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 
-const BotelinMercantil = () => {
+const BoletinMercantil = () => {
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const [selectedRecord, setSelectedRecord] = useState(null);
@@ -66,7 +66,11 @@ const BotelinMercantil = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h2 className="text-2xl font-bold mb-4">Selecciona un mes</h2>
+      <h2 className="text-3xl text-gradient-rose font-bold m-8 text-center drop-shadow-xl">
+        Noticia Mercantil
+      </h2>
+      <p className="text-center my-10 mx-2 lg:mx-48 leading-loose">Señor usuario, La CAMARA DE COMERCIO DE PAMPLONA pone a su disposición la consulta de los libros del Registro Mercantil, ESAL y Proponentes. </p>
+      <h2 className="text-2xl font-bold mb-4">Selecciona un el mes que desea consultar</h2>
       <div className="mb-4">
         {months.map(month => (
           <button
@@ -94,7 +98,7 @@ const BotelinMercantil = () => {
 
       {selectedRecord && (
         <div
-          className="bg-white shadow-lg rounded-lg p-6 mt-6"
+          className=" bg-white shadow-lg rounded-lg p-6 mt-6"
           ref={detailsRef}
         >
           <h3 className="text-xl font-bold text-gray-800 mb-4">
@@ -129,4 +133,4 @@ const BotelinMercantil = () => {
   );
 };
 
-export { BotelinMercantil };
+export { BoletinMercantil };

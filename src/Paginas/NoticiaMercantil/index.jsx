@@ -1,11 +1,12 @@
 import React from "react";
-import { BotelinMercantil } from "../../Componentes/BoletinMercantil";
+import { LayoutGeneral } from "../../Layouts/LayoutGeneral";
+import { BoletinMercantil } from "../../Componentes/BoletinMercantil";
 
 const NoticiaMercantil = () => {
     return(
-        <div>
-            <BotelinMercantil />
-        </div>
+        <LayoutGeneral>
+            <BoletinMercantil />
+        </LayoutGeneral>
     )
 };
 
