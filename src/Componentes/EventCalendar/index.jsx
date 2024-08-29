@@ -54,7 +54,7 @@ const EventCalendar = ({ events }) => {
             <div className="col-span-1 flex flex-wrap justify-center items-center self-center w-full">
                 <h2 className="mb-5 text-2xl font-bold">Próximo evento</h2>
                 {selectedEvent ? (
-                    <div className="event-card card lg:card-side bg-base-100 shadow-xl h-[60vh]">
+                    <div className="event-card card lg:card-side bg-base-100 shadow-xl ">
                         <figure className="w-full md:w-5/6 lg:w-1/2 flex-shrink-0 m-2">
                             <img src={selectedEvent.src} alt={selectedEvent.title} className="w-full h-auto object-cover" />
                         </figure>

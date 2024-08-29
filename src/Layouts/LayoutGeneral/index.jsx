@@ -8,9 +8,13 @@ const LayoutGeneral = ({children}) => {
     return(
         <div className="leading-normal tracking-normal">
             <Header />
-            <Aside/>
+            <div className="relative">
+                <Aside/>
+            </div>
             <section className="bg-white shadow-lg ">
-                {children}
+                <div className="relative">
+                    {children}
+                </div>
             </section>
             <Footer />
         </div>
