@@ -1,5 +1,4 @@
 import React from "react";
-import { VisitCounter } from "../VisitCounter";
 import "./styles.css";
 
 const Footer = () => {
@@ -65,7 +64,6 @@ const Footer = () => {
               Registrando Calidad desde 1943
             </span>
           </p>
-          <VisitCounter />
         </aside>
         <div className="place-self-center text-dorado">
           <small>
