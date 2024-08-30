@@ -1,5 +1,6 @@
 import React from "react";
-import { Header } from "../../Componentes/Header";
+// import { Header } from "../../Componentes/Header";
+import Example from "../../Componentes/HeaderDos";
 import { Aside } from '../../Componentes/Aside';
 import { Footer } from "../../Componentes/Footer";
 
@@ -7,7 +8,8 @@ import { Footer } from "../../Componentes/Footer";
 const LayoutGeneral = ({children}) => {
     return(
         <div className="leading-normal tracking-normal">
-            <Header />
+            {/* <Header /> */}
+            <Example />
             <div className="relative">
                 <Aside/>
             </div>

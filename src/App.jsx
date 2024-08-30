@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './Paginas/home';
 import { NoticiaMercantil } from './Paginas/NoticiaMercantil';
 import { Mercantil } from './Paginas/mercantil';
-import { Employee } from './Paginas/Institucional/Empleados';
+import { Employee } from './Paginas/Transparencia/InformacionEntidad/DirectorioEmpleados';
 import { Historia } from './Paginas/Institucional/Historia';
 import { QuienesSomos } from './Paginas/Institucional/QuinesSomos';
 import { PoliticaCalidad } from './Paginas/Institucional/PoliticaCalidad';
