@@ -56,7 +56,7 @@ export default function Example() {
     <header className="sticky z-50 bg-white shadow-lg">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Cámara de Comercio de Pamplona</span>
             <img src="https://i.postimg.cc/9FDdqdpT/Logo-Camara.png" alt="logo camara" className="relative w-16" />
             {/* <img alt="" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" className="h-8 w-auto" /> */}
