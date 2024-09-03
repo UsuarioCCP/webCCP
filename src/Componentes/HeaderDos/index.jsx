@@ -20,7 +20,6 @@ import {
   ChartPieIcon,
   CursorArrowRaysIcon,
   FingerPrintIcon,
-  SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
@@ -48,11 +47,6 @@ const leyTransparencia = [
   { name: 'Obligación de Reporte de Información Especifica por Parte de la Entidad', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
   { name: 'Atención y Servicios a la Ciudadanía', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
   { name: 'Noticias', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-]
-
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
 ]
 
 export default function Example() {
@@ -171,12 +165,12 @@ export default function Example() {
                 </PopoverPanel>
             </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
             Company
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
             Posible espacio para vue <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
@@ -186,7 +180,7 @@ export default function Example() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Cámara de Comercio de Pamplona</span>
               <img src="https://i.postimg.cc/9FDdqdpT/Logo-Camara.png" alt="logo camara" className="h-20 w-auto" />
             </a>
@@ -274,7 +268,7 @@ export default function Example() {
                 </a> */}
                 
                 <a
-                  href="#"
+                  href="/"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   posible espacio para VUE
