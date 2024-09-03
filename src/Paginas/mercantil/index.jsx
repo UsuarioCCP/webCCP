@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ScrollMercantil } from "../../Componentes/ScrollMercantil";
-import { CardMercantil } from "../../Componentes/CardMercantil";
+import { CardGeneral } from "../../Componentes/CardGeneral";
 import "./styles.css";
 
 const Mercantil = () => {
@@ -341,7 +341,7 @@ const Mercantil = () => {
             </div>
             {/* Persona Natural */}
             <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink lg:m-5">
-              <CardMercantil registro="Persona Natural">
+              <CardGeneral nombre="Persona Natural">
                 <div className="flex items-center justify-end">
                   <button
                      className="mx-auto lg:mx-0 hover:underline bg-gradient-rose font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-85 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
@@ -350,12 +350,12 @@ const Mercantil = () => {
                     {isNaturalOpen ? "Cerrar" : "Conocer más"}
                   </button>
                 </div>
-              </CardMercantil>
+              </CardGeneral>
             </div>
 
           {/* Persona Juridica */}
             <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink lg:m-5">
-              <CardMercantil registro="Persona Juridica">
+              <CardGeneral nombre="Persona Juridica">
                 <div className="flex items-center justify-end">
                   <button
                     className="mx-auto lg:mx-0 hover:underline bg-gradient-rose font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-85 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
@@ -364,7 +364,7 @@ const Mercantil = () => {
                     {isJuridicaOpen ? "Cerrar" : "Conocer más"}
                   </button>
                 </div>
-              </CardMercantil>
+              </CardGeneral>
             </div>
           </div>
 

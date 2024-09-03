@@ -84,15 +84,24 @@ const QuienesSomos = () => {
       <div className="bg-quienes-somos">
         <div className="fixed overlay-quienes-somos z-10 w-full h-svh"></div>
         <div className="relative z-20 pt-2">
-          <h2 className="text-3xl text-gradient-rose font-bold m-8 text-center drop-shadow-xl">
+          <h2 className="w-full m-8 my-2 text-4xl font-bold leading-tight text-center text-gradient-rose drop-shadow-xl">
             ¿Quienes Somos?
           </h2>
-          <p className="text-center">
+          {/* <p className="text-center">
             Descubre cómo desde la Cámara de Comercio de Pamplona trabajamos
             para impulsar el crecimiento económico y empresarial de nuestra
             región
-          </p>
-          <div className="flex divider divider-neutral opacity-30 justify-center mx-36"></div>
+          </p> */}
+          <div className="text-center my-10 mx-2 lg:mx-48 font-normal text-gray-900 sm:text-xl sm:leading-9">
+              <p>
+                Descubre cómo desde la Cámara de Comercio de Pamplona trabajamos
+              para impulsar el crecimiento económico y empresarial de nuestra
+              región
+              </p>
+          </div>
+          <div className="w-full mb-4">
+            <div className="h-1 mx-auto gradient-red-yellow w-2/3 opacity-25 my-0 py-0 rounded-t"></div>
+          </div>
           <div className="grid justify-items-center grid-cols-1 lg:grid-cols-5">
             <div className="col-span-2 lg:my-2 h-auto">
               <figure className="flex flex-wrap justify-center mt-20">
@@ -131,11 +140,11 @@ const QuienesSomos = () => {
                     <img src="ruta/a/tu/imagen-vision.jpg" alt="Visión" className="w-full h-auto rounded-lg mb-4 lg:mb-0" />
                   </div> */}
                   <div className="w-full lg:w-5/6">
-                    <div className="bg-gray-100 bg-opacity-70 shadow-lg border rounded my-8 py-5 px-10">
+                    <div className="bg-gray-100 bg-opacity-70 shadow-lg border rounded my-4 py-5 px-10">
                       <h3 className="text-2xl text-gradient-rose font-semibold mb-2">
                         Misión
                       </h3>
-                      <p className="text-justify ">
+                      <p className="text-justify text-gray-900 sm:text-normal sm:leading-7 ">
                         Somos una organización privada, gremial, Sin Ánimo de
                         Lucro, depositaria de fe pública, dedicada a la
                         prestación eficiente de los servicios del Registro Único
@@ -153,7 +162,7 @@ const QuienesSomos = () => {
                       <h3 className="text-2xl text-gradient-rose font-semibold mb-2">
                         Visión
                       </h3>
-                      <p className="text-justify">
+                      <p className="text-justify text-gray-900 sm:text-normal sm:leading-7">
                         Para el año 2026 seremos reconocidos como la
                         Organización gremial líder en el desarrollo integral de
                         nuestra región, mediante el acompañamiento de proyectos
@@ -167,7 +176,7 @@ const QuienesSomos = () => {
                       <h3 className="text-2xl text-gradient-rose font-semibold mb-2">
                         Proposito MEGA
                       </h3>
-                      <p className="text-justify">
+                      <p className="text-justify text-gray-900 sm:text-normal sm:leading-7">
                         Aumentar la satisfacción del cliente a través de la
                         aplicación eficaz del Sistema de Gestión de Calidad de
                         los Servicios Registrales, incluidos los procesos para

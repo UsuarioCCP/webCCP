@@ -9,12 +9,14 @@ const PoliticaCalidad = () => {
       <div className="p-4 bg-white rounded-lg shadow-lg bg-politica-calidad">
         <div className="fixed overlay-politica-calidad w-full h-svh"></div>
         <div className="relative mb-10 z-30 pt-2">
-          <h2 className="text-3xl text-gradient-rose font-bold m-8 text-center drop-shadow-xl ">
+          <h2 className="w-full m-8 my-2 text-4xl font-bold leading-tight text-center text-gradient-rose drop-shadow-xl">
             Política de Calidad
           </h2>
-          <div className="flex divider divider-neutral opacity-30 justify-center mx-36"></div>         
+          <div className="w-full mb-4">
+            <div className="h-1 mx-auto gradient-red-yellow w-2/3 opacity-25 my-0 py-0 rounded-t"></div>
+          </div>      
           <div className="flex flex-wrap lg:flex-row justify-center items-center lg:items-start bg-gray-100 bg-opacity-70 shadow-lg border rounded m-10 px-28">
-            <p className="text-center my-10 mx-48 leading-loose">
+            <p className="text-center my-10 mx-48 lg:m-16  text-gray-900 sm:text-xl sm:leading-8">
               La Cámara de Comercio de Pamplona como entidad depositaria de fe
               pública, dedicada a la prestación de servicios del Registro único
               empresarial y social (RUES), y la ejecución de programas y proyectos

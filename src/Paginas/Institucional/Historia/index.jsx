@@ -8,29 +8,32 @@ const Historia = () => {
   return (
     <LayoutGeneral>
       <div className="p-4 bg-white rounded-lg shadow-lg bg-historia">
-        <div className="fixed overlay-historia w-full h-svh"></div>
+        <div className="fixed overlay-historia w-full h-lvh"></div>
         <div className="relative mb-10 z-30 pt-2">
-          <h2 className="text-3xl text-gradient-rose font-bold m-8 text-center drop-shadow-xl">
+          <h2 className="w-full m-8 my-2 text-4xl font-bold leading-tight text-center text-gradient-rose drop-shadow-xl">
             Nuestra Historia
           </h2>
-          <p className="text-center my-10 mx-2 lg:mx-48 leading-loose">
-            La Jurisdicción de la Cámara de Comercio de Pamplona, fue
-            establecida por medio del decreto 74 de 1976, Artículo 27, la cual
-            comprende los municipios de Pamplona, Bochalema, Chitagá, Cácota,
-            Labateca, Mutiscua, Cucutilla, Pamplonita, Silos y Toledo, en el
-            Departamento Norte de Santander.
-          </p>
-          <div className="flex divider divider-neutral opacity-30 justify-center mx-5 lg:mx-36"></div>
-          <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start bg-gray-100 bg-opacity-70 shadow-lg border rounded lg:m-10 lg:px-28">
+          <div className="text-center my-10 mx-2 lg:mx-48 text-gray-900 sm:text-xl sm:leading-9">
+              <p>
+                El Centro de Conciliación es un espacio dedicado a la resolución
+                pacífica de conflictos, ofreciendo a las partes en disputa la
+                posibilidad de llegar a acuerdos justos y satisfactorios sin
+                necesidad de acudir a procesos judiciales. (cambiar el texto)
+              </p>
+          </div>
+          <div className="w-full mb-4">
+            <div className="h-1 mx-auto gradient-red-yellow w-2/3 opacity-25 my-0 py-0 rounded-t"></div>
+          </div>
+          <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start bg-gray-100 bg-opacity-70 shadow-lg border rounded lg:m-10 lg:px-20">
             <div className="flex flex-wrap items-center">
-              <div className="w-full lg:w-1/2 ">
+              <div className="w-full lg:w-1/3 ">
                 <img
                   src="https://i.postimg.cc/tJvrzYkB/casa-velez-2.jpg"
                   alt="Historia de la entidad"
                   className="w-full h-auto rounded-lg mb-4 lg:mb-0"
                 />
               </div>
-              <div className="w-full lg:w-1/2 p-5 lg:px-10 lg:py-10">
+              <div className="w-full lg:w-2/3 p-5 lg:px-10 lg:py-10 font-normal text-gray-900 sm:text-xl sm:leading-normal">
                 <p className="text-justify p-2">
                   La Cámara de Comercio de Pamplona fue fundada gracias a la
                   iniciativa de los comerciantes locales y la destacada gestión

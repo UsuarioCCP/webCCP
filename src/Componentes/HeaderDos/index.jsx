@@ -26,14 +26,14 @@ import { ChevronDownIcon} from '@heroicons/react/20/solid';
 
 const nuestraEntidad = [
   { name: 'Historia', description: 'Get a better understanding of your traffic', href: '/institucional/historia' },
-  { name: 'Quienes Somos', description: 'Speak directly to your customers', href: '#' },
-  { name: 'Politica Calidad', description: 'Your customers’ data will be safe and secure', href: '#' },
-  { name: 'Nuestra Jurisdicción', description: 'Connect with third-party tools', href: '#' },
+  { name: 'Quienes Somos', description: 'Speak directly to your customers', href: '/institucional/quienes-somos' },
+  { name: 'Politica Calidad', description: 'Your customers’ data will be safe and secure', href: '/institucional/politica-calidad' },
+  { name: 'Nuestra Jurisdicción', description: 'Connect with third-party tools', href: '/institucional/jurisdiccion' },
 ]
 const centroConciliacion = [
-  { name: 'Requisitos y Tarifas', description: 'Get a better understanding of your traffic', href: '/institucional/historia', icon: ChartPieIcon },
-  { name: 'Conciliadores', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Reglamento del Centro', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
+  { name: 'Requisitos y Tarifas', description: 'Get a better understanding of your traffic', href: '/centro-conciliacion/requisitos-tarifas', icon: ChartPieIcon },
+  { name: 'Conciliadores', description: 'Speak directly to your customers', href: '/centro-conciliacion/conciliadores', icon: CursorArrowRaysIcon },
+  { name: 'Reglamento del Centro', description: 'Your customers’ data will be safe and secure', href: '/centro-conciliacion/reglamento', icon: FingerPrintIcon },
 ]
 const leyTransparencia = [
   { name: 'Información de la entidad', description: 'Get a better understanding of your traffic', href: '/institucional/historia', icon: ChartPieIcon },
@@ -54,7 +54,7 @@ export default function Example() {
 
   return (
     <header className="sticky z-50 bg-white shadow-lg">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+      <nav aria-label="Global" className="text-base mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Cámara de Comercio de Pamplona</span>
@@ -98,7 +98,9 @@ export default function Example() {
 
             <Popover className="group">
                 <PopoverButton className="flex items-center gap-2">
-                        <HoverButton text="Noticia Mercantil" />
+                        <NavLink to="/noticia-mercantil">
+                          <HoverButton text="Noticia Mercantil" />
+                        </NavLink>
                     {/* <ChevronDownIcon className="size-5 group-data-[open]:rotate-180" /> */}
                 </PopoverButton>
                 {/* <PopoverPanel anchor="bottom" className="absolute -left-8 top-full z-10 mt-3 w-screen md:w-56 max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5" >
@@ -121,10 +123,12 @@ export default function Example() {
 
             <Popover className="group">
                 <PopoverButton className="flex items-center gap-2">
+                  <NavLink to="/centro-conciliacion">
                     <HoverButton text="Centro Conciliación" />
-                    <ChevronDownIcon className="size-5 group-data-[open]:rotate-180" />
+                  </NavLink>
+                  <ChevronDownIcon className="size-5 group-data-[open]:rotate-180" />
                 </PopoverButton>
-                <PopoverPanel anchor="bottom" className="absolute -left-8 top-full z-10 mt-3 w-screen md:w-56 max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5" >
+                <PopoverPanel anchor="bottom" className="absolute -left-8 top-full z-50 mt-3 w-screen md:w-56 max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5" >
                 <div className="p-4">
                     {centroConciliacion.map((item) => (
                     <div

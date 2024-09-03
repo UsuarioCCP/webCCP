@@ -27,6 +27,8 @@
 }
 
 body{
+  font-size: 1rem ;
+  line-height: 1.5rem;
   background: var(--gradient-fondo);
   background: var(--webkit-gradient);
   /* background-image: url("https://i.postimg.cc/KckP4fBD/239b031e-276a-4555-9289-a523ab87f625.jpg");

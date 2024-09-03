@@ -19,7 +19,7 @@ const Home = () => {
                     imageUrl=""
                     /> */}
                 {/* <Aside /> */}
-                <SectionSeparator />
+                <SectionSeparator background="https://i.postimg.cc/yxBJKm6n/banner.png" title="¡Registra tu empresa hoy mismo!" description="Haz crecer tu negocio de manera formal y segura" />
                 <NewsSection />
                 <SectionSeparatorEvent />
                 <EventSection />
