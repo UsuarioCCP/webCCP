@@ -92,8 +92,8 @@ const CentroConciliacion = () => {
             src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg"
             className="mx-auto h-12"
           /> */}
-          <figure className="mt-10">
-            <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+          <figure className="my-5">
+            <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-xl sm:leading-9">
               <p>
               Nuestro centro de conciliación está aquí para ayudarte a resolver conflictos de forma amigable y efectiva. Ofrecemos un enfoque justo y neutral para resolver conflictos y alcanzar acuerdos que satisfagan a todas las partes. Con nuestro equipo de expertos, podrás enfrentar y superar cualquier desacuerdo de manera rápida y profesional. ¡Consulta con nosotros y encuentra la solución adecuada!
               </p>
