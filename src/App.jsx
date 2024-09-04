@@ -76,7 +76,7 @@ function App() {
             </Route>
             {/* Ruta informacion entidad */}
             <Route path="/ley-transparencia/info-entidad" element={<InfoEntidad />}>
-              <Route path="mision-vision" element={<VisionMision />} />
+              <Route path="vision-mision" element={<VisionMision />} />
               <Route path="funciones" element={<FuncionesDeberes />} />
               <Route path="organigrama" element={<Organigrama />} />
               <Route path="mapa-procesos" element={<MapaProcesos />} />

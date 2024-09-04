@@ -4,7 +4,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 const SidebarInformacionEntidad = () => {
   // Array con los elementos del menú
   const menuItems = [
-    { name: 'Visión-Misión', to: 'vision-mision' },
+    { name: 'Visión y Misión', to: 'vision-mision' },
     { name: 'Funciones y Deberes', to: 'funciones' },
     { name: 'Organigrama', to: 'organigrama' },
     { name: 'Mapas y Cartas Descriptivas de los Procesos', to: 'mapa-procesos' },
