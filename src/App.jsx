@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './Paginas/home';
 import { NoticiaMercantil } from './Paginas/NoticiaMercantil';
 import { Mercantil } from './Paginas/mercantil';
-import { Employee } from './Paginas/Transparencia/InformacionEntidad/DirectorioEmpleados';
 // Institucional
 import { Historia } from './Paginas/Institucional/Historia';
 import { QuienesSomos } from './Paginas/Institucional/QuinesSomos';
@@ -11,6 +10,35 @@ import { PoliticaCalidad } from './Paginas/Institucional/PoliticaCalidad';
 import { Jurisdiccion } from './Paginas/Institucional/Jurisdicción';
 // Centro Conciliación
 import { CentroConciliacion } from './Paginas/CentroConciliación';
+// Ley Transparencia
+import { LeyTransparencia } from './Paginas/Transparencia';
+import { InfoEntidad } from './Paginas/Transparencia/InformacionEntidad';
+import { Normatividad } from './Paginas/Transparencia/Normatividad';
+import { Contratacion } from './Paginas/Transparencia/Contratacion';
+import { Planeacion } from './Paginas/Transparencia/Planeacion';
+import { Tramites } from './Paginas/Transparencia/Tramites';
+import { Participa } from './Paginas/Transparencia/Participa';
+import { DatosAbiertos } from './Paginas/Transparencia/DatosAbiertos';
+import { InfoGruposInteres } from './Paginas/Transparencia/InfoGruposInteres';
+import { ReporteEntidad } from './Paginas/Transparencia/ObligacionReporte';
+import { AtencionCiudadania } from './Paginas/Transparencia/AtencionCiudadania';
+import { Noticias } from './Paginas/Transparencia/Noticias';
+//Información entidad
+import { VisionMision } from './Paginas/Transparencia/InformacionEntidad/VisionMision';
+import { FuncionesDeberes } from './Paginas/Transparencia/InformacionEntidad/FuncionesDeberes';
+import { Organigrama } from './Paginas/Transparencia/InformacionEntidad/EstructuraOrganica';
+import { MapaProcesos } from './Paginas/Transparencia/InformacionEntidad/MapaProcesos';
+import { Directorioinstitucional } from './Paginas/Transparencia/InformacionEntidad/DirectorioInstitucional';
+import { DirectorioEmpleados } from './Paginas/Transparencia/InformacionEntidad/DirectorioEmpleados';
+import { DirectorioEntidades } from './Paginas/Transparencia/InformacionEntidad/DirectorioEntidades';
+import { DirectorioAgremiaciones } from './Paginas/Transparencia/InformacionEntidad/DirectorioAgremiaciones';
+import { ServiciosAlPublico } from './Paginas/Transparencia/InformacionEntidad/ServiciosAlPublico';
+import { PorcedimientoDecisiones } from './Paginas/Transparencia/InformacionEntidad/ProcedimientoDecisiones';
+import { PresentacionPQRSF } from './Paginas/Transparencia/InformacionEntidad/PresentacionPQRSF';
+import { CalendarioActividades } from './Paginas/Transparencia/InformacionEntidad/CalendarioActividades';
+import { InformacionDecisiones } from './Paginas/Transparencia/InformacionEntidad/InformacionDecisiones';
+import { AutoridadesVigilantes } from './Paginas/Transparencia/InformacionEntidad/AutoridadesVigilantes';
+import { PublicaciónHV } from './Paginas/Transparencia/InformacionEntidad/PublicacionHV';
 
 // import { Footer } from './Componentes/Footer';
 // import axios from 'axios';
@@ -27,13 +55,43 @@ function App() {
             <Route path="/noticia-mercantil" element={<NoticiaMercantil />} />
             <Route path="/mercantil" element={<Mercantil />} />
             {/* Rutas Información institucional */}
-            <Route path="/institucional/empleados" element={<Employee />} />
             <Route path="/institucional/historia" element={<Historia />} />
             <Route path="/institucional/quienes-somos" element={<QuienesSomos />} />
             <Route path="/institucional/politica-calidad" element={<PoliticaCalidad />} />
             <Route path="/institucional/jurisdiccion" element={<Jurisdiccion />} />
             {/* Rutas Centro Conciliación */}
             <Route path="/centro-conciliacion" element={<CentroConciliacion />} />
+            {/* Rutas Ley Trasnparecia */}
+            <Route path="/ley-transparencia" element={<LeyTransparencia />}>
+              <Route path="normatividad" element={<Normatividad />} />
+              <Route path="contratacion" element={<Contratacion />} />
+              <Route path="planeacion" element={<Planeacion />} />
+              <Route path="tramites" element={<Tramites />} />
+              <Route path="participa" element={<Participa />} />
+              <Route path="datos-abiertos" element={<DatosAbiertos />} />
+              <Route path="info-grupos" element={<InfoGruposInteres />} />
+              <Route path="reporte-entidad" element={<ReporteEntidad />} />
+              <Route path="atencion-ciudadania" element={<AtencionCiudadania />} />
+              <Route path="noticias" element={<Noticias />} />
+            </Route>
+            {/* Ruta informacion entidad */}
+            <Route path="/ley-transparencia/info-entidad" element={<InfoEntidad />}>
+              <Route path="mision-vision" element={<VisionMision />} />
+              <Route path="funciones" element={<FuncionesDeberes />} />
+              <Route path="organigrama" element={<Organigrama />} />
+              <Route path="mapa-procesos" element={<MapaProcesos />} />
+              <Route path="dir-institucional" element={<Directorioinstitucional />} />
+              <Route path="dir-empleados" element={<DirectorioEmpleados />} />
+              <Route path="dir-entidades" element={<DirectorioEntidades />} />
+              <Route path="dir-agremiaciones" element={<DirectorioAgremiaciones />} />
+              <Route path="servicios-al-publico" element={<ServiciosAlPublico />} />
+              <Route path="procedimientos-decisiones" element={<PorcedimientoDecisiones />} />
+              <Route path="presentacion-pqrsf" element={<PresentacionPQRSF />} />
+              <Route path="calendario-actividades" element={<CalendarioActividades />} />
+              <Route path="info-decisiones" element={<InformacionDecisiones />} />
+              <Route path="autoridades-vigilantes" element={<AutoridadesVigilantes />} />
+              <Route path="publicaciones-hv" element={<PublicaciónHV/>} />
+            </Route>
           </Routes>
         </div>
         {/* <Footer /> */}

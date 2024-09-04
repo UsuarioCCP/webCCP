@@ -36,17 +36,17 @@ const centroConciliacion = [
   { name: 'Reglamento del Centro', description: 'Your customers’ data will be safe and secure', href: '/centro-conciliacion/reglamento', icon: FingerPrintIcon },
 ]
 const leyTransparencia = [
-  { name: 'Información de la entidad', description: 'Get a better understanding of your traffic', href: '/institucional/historia', icon: ChartPieIcon },
-  { name: 'Normatividad de la entidad', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Contratación', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Planeación', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Tramites', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Participa', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Datos Abiertos', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Información Especifica para Grupos de Interes', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Obligación de Reporte de Información Especifica por Parte de la Entidad', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Atención y Servicios a la Ciudadanía', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Noticias', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
+  { name: 'Información de la entidad', description: 'Get a better understanding of your traffic', href: '/ley-transparencia/info-entidad', icon: ChartPieIcon },
+  { name: 'Normatividad de la entidad', description: 'Speak directly to your customers', href: '/ley-transparencia/normatividad', icon: CursorArrowRaysIcon },
+  { name: 'Contratación', description: 'Your customers’ data will be safe and secure', href: '/ley-transparencia/contratacion', icon: FingerPrintIcon },
+  { name: 'Planeación', description: 'Your customers’ data will be safe and secure', href: '/ley-transparencia/planeacion', icon: FingerPrintIcon },
+  { name: 'Tramites', description: 'Your customers’ data will be safe and secure', href: '/ley-transparencia/tramites', icon: FingerPrintIcon },
+  { name: 'Participa', description: 'Your customers’ data will be safe and secure', href: '/ley-transparencia/participa', icon: FingerPrintIcon },
+  { name: 'Datos Abiertos', description: 'Your customers’ data will be safe and secure', href: '/ley-transparencia/datos-abiertos', icon: FingerPrintIcon },
+  { name: 'Información Especifica para Grupos de Interes', description: 'Your customers’ data will be safe and secure', href: '/ley-transparencia/info-grupos', icon: FingerPrintIcon },
+  { name: 'Obligación de Reporte de Información Especifica por Parte de la Entidad', description: 'Your customers’ data will be safe and secure', href: '/ley-transparencia/reporte-entidad', icon: FingerPrintIcon },
+  { name: 'Atención y Servicios a la Ciudadanía', description: 'Your customers’ data will be safe and secure', href: '/ley-transparencia/atencion-ciudadania', icon: FingerPrintIcon },
+  { name: 'Noticias', description: 'Your customers’ data will be safe and secure', href: '/ley-transparencia/noticias', icon: FingerPrintIcon },
 ]
 
 export default function HeaderDos() {
@@ -148,7 +148,9 @@ export default function HeaderDos() {
 
             <Popover className="group">
                 <PopoverButton className="flex items-center gap-2">
+                  <NavLink to="/ley-transparencia">
                     <HoverButton text="Ley Transparencia" />
+                  </NavLink>
                     <ChevronDownIcon className="size-5 group-data-[open]:rotate-180" />
                 </PopoverButton>
                 <PopoverPanel anchor="bottom" className="absolute -left-8 top-full z-50 mt-3 w-screen md:w-56 max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5" >
