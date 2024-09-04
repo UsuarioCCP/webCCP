@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+
+// import QuinesSomos from "../../../Assets/Images/Quienes-somos.png";
+import "./styles.css";
 
 const VisionMision = () => {
-    return(
-        <div>
+
+  return (
+    <div>
       <div className="bg-quienes-somos">
         <div className="fixed overlay-quienes-somos z-10 w-full h-svh"></div>
         <div className="relative z-20 pt-2">
@@ -10,46 +14,16 @@ const VisionMision = () => {
             ¿Vision y Mision?
           </h2>
           <div className="text-center my-10 mx-2 lg:mx-48 font-normal text-gray-900 sm:text-xl sm:leading-9">
-              <p>
-                Descubre cómo desde la Cámara de Comercio de Pamplona trabajamos
+            <p>
+              Descubre cómo desde la Cámara de Comercio de Pamplona trabajamos
               para impulsar el crecimiento económico y empresarial de nuestra
               región
-              </p>
+            </p>
           </div>
           <div className="w-full mb-4">
             <div className="h-1 mx-auto gradient-red-yellow w-2/3 opacity-25 my-0 py-0 rounded-t"></div>
           </div>
           <div className="grid justify-items-center grid-cols-1 lg:grid-cols-5">
-            <div className="col-span-2 lg:my-2 h-auto">
-              <figure className="flex flex-wrap justify-center mt-20">
-                <img
-                  className="content-end rotate-90 sm:rotate-0 w-80 sm:w-full "
-                  src="https://i.postimg.cc/mktmS0Kz/Quienes-somos.png"
-                  alt=""
-                />
-              </figure>
-              <div className="">
-                {/* Valores */}
-                <div className=" flex flex-wrap justify-center py-8 sm:py-2 values-list">
-                  <h2 className="text-center text-2xl text-gradient-rose font-semibold leading-8 text-gray-900 mb-7">
-                    Valores Institucionales
-                  </h2>
-                  <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="inner flex" ref={innerRef}>
-                      {valores.map((valor, index) => (
-                        <ListItem
-                          key={index}
-                          text={valor}
-                          colorClass="text-red-700"
-                        />
-                      ))}
-                    </div>
-                    <div className="fade"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <div className="col-span-3">
               <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start">
                 <div className="justify-center w-80 lg:w-full">
@@ -113,7 +87,7 @@ const VisionMision = () => {
         </div>
       </div>
     </div>
-    )
+  );
 };
 
 export { VisionMision };
