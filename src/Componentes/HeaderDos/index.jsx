@@ -49,7 +49,7 @@ const leyTransparencia = [
   { name: 'Noticias', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
 ]
 
-export default function Example() {
+export default function HeaderDos() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
