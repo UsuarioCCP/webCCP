@@ -1,9 +1,28 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ScrollMercantil } from "../../Componentes/ScrollMercantil";
 import { CardGeneral } from "../../Componentes/CardGeneral";
+import { ItemButton } from "../../Componentes/ItemButton";
 import "./styles.css";
 
 const Mercantil = () => {
+
+  const tramitesPersonaNatural = [
+    { nombre: "Matricula", modalId: "modal_matricula" },
+    { nombre: "Renovación", modalId: "modal_renovacion" },
+    { nombre: "Cancelación", modalId: "modal_cancelacion" },
+    { nombre: "Mutación", modalId: "modal_mutacion" },
+    // Agrega más trámites según sea necesario
+  ];
+  const tramitesPersonaJuridica = [
+    { nombre: "Constitución", modalId: "modal_constitucion" },
+    { nombre: "Inscripciones", modalId: "modal_inscripcion" },
+    { nombre: "Mutación", modalId: "modal_mutacion" },
+    { nombre: "Disolución", modalId: "modal_disolucion" },
+    { nombre: "Liquidación", modalId: "modal_liquidacion" },
+    // Agrega más trámites según sea necesario
+  ];
+
+
   const headerRef = useRef(null);
   const navContentRef = useRef(null);
   const navActionRef = useRef(null);
@@ -341,7 +360,11 @@ const Mercantil = () => {
             </div>
             {/* Persona Natural */}
             <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink lg:m-5">
-              <CardGeneral nombre="Persona Natural">
+              <CardGeneral 
+                imgUrl=""
+                nombre="Persona Natural"
+                descripcion="Desripción de que es una persona natural"
+                >
                 <div className="flex items-center justify-end">
                   <button
                      className="mx-auto lg:mx-0 hover:underline bg-gradient-rose font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-85 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
@@ -355,7 +378,11 @@ const Mercantil = () => {
 
           {/* Persona Juridica */}
             <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink lg:m-5">
-              <CardGeneral nombre="Persona Juridica">
+              <CardGeneral 
+              imgUrl=""
+              nombre="Persona Juridica"
+              descripcion="Desripción de que es una persona juridica"
+              >
                 <div className="flex items-center justify-end">
                   <button
                     className="mx-auto lg:mx-0 hover:underline bg-gradient-rose font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-85 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
@@ -374,80 +401,22 @@ const Mercantil = () => {
               ref={naturalRef}
               className="flex justify-center bg-white text-black my-10"
             >
-              <div className="navbar lg:w-2/3 bg-base-300 rounded-box">
-                <div className="flex flex-1 justify-center px-2">
-                  <div className="flex items-stretch gap-5">
-                    {/* Boton modal renovacion */}
-                    <div>
-                      <button
-                        className="btn btn-md lg:btn-lg"
-                        onClick={() =>
-                          document.getElementById("my_modal_3").showModal()
-                        }
-                      >
-                        Renovación
-                      </button>
-                      <dialog id="my_modal_3" className="modal">
-                        <div className="modal-box max-w-[72rem] h-[80vh]">
-                          <form method="dialog">
-                            {/* if there is a button in form, it will close the modal */}
-                            
-                            <button className="btn btn-circle btn-ghost absolute right-4">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-6 w-6"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth="2"
-                                  d="M6 18L18 6M6 6l12 12" />
-                              </svg>
-                            </button>
-                          </form>
-                          <div className="card-body px-4 pt-2 pb-0 m-0">
-                            <ScrollMercantil />
-                          </div>
-                        </div>
-                      </dialog>
-                    </div>
-
-                    {/* Boton modal cancelación */}
-                    <div>
-                      <button
-                        className="btn btn-md lg:btn-lg"
-                        onClick={() =>
-                          document.getElementById("my_modal_3").showModal()
-                        }
-                      >
-                        Cancelación
-                      </button>
-                      <dialog id="my_modal_3" className="modal">
-                        <div className="modal-box max-w-[72rem] h-[80vh]">
-                          <form method="dialog">
-                            {/* if there is a button in form, it will close the modal */}
-                            <button className="btn btn-circle btn-ghost absolute right-4">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-6 w-6"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                  strokeWidth="2"
-                                  d="M6 18L18 6M6 6l12 12" />
-                              </svg>
-                            </button>
-                          </form>
-                          <div className="card-body px-4 pt-2 pb-0 m-0">
-                            <ScrollMercantil />
-                          </div>
-                        </div>
-                      </dialog>
+              <div className="bg-gray-200 w-3/4 rounded-lg">
+                <h2 className="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
+                  Conoce como realizar tu trámite de:
+                </h2>
+                <div className="navbar w-full bg-base-300 rounded-box">
+                  <div className="flex flex-1 justify-center px-2">
+                    <div className="flex items-stretch gap-5 my-5">
+                      {tramitesPersonaNatural.map((tramite) => (
+                        <ItemButton
+                          key={tramite.modalId}
+                          nombre={tramite.nombre}
+                          modalId={tramite.modalId}
+                          contenido={<ScrollMercantil />}
+                        />
+                          
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -456,35 +425,29 @@ const Mercantil = () => {
           )}
 
           {/* contenido Persona Juridica */}
-
           {isJuridicaOpen && (
-            <div ref={juridicaRef} className="bg-white text-black">
-              <h1>Contenido Persona Jurídica</h1>
-              <div className="collapse collapse-arrow bg-base-200">
-                <input type="radio" name="my-accordion-2" defaultChecked />
-                <div className="collapse-title text-xl font-medium">
-                  Click to open this one and close others
-                </div>
-                <div className="collapse-content">
-                  <p>hello</p>
-                </div>
-              </div>
-              <div className="collapse collapse-arrow bg-base-200">
-                <input type="radio" name="my-accordion-2" />
-                <div className="collapse-title text-xl font-medium">
-                  Click to open this one and close others
-                </div>
-                <div className="collapse-content">
-                  <p>hello</p>
-                </div>
-              </div>
-              <div className="collapse collapse-arrow bg-base-200">
-                <input type="radio" name="my-accordion-2" />
-                <div className="collapse-title text-xl font-medium">
-                  Click to open this one and close others
-                </div>
-                <div className="collapse-content">
-                  <p>hello</p>
+            <div
+              ref={juridicaRef}
+              className="flex justify-center bg-white text-black my-10"
+            >
+              <div className="bg-gray-200 w-3/4 rounded-lg">
+                <h2 className="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
+                  Conoce como realizar tu trámite de:
+                </h2>
+                <div className="navbar w-full bg-base-300 rounded-box">
+                  <div className="flex flex-1 justify-center px-2">
+                    <div className="flex items-stretch gap-5 my-5">
+                      {tramitesPersonaJuridica.map((tramite) => (
+                        <ItemButton
+                          key={tramite.modalId}
+                          nombre={tramite.nombre}
+                          modalId={tramite.modalId}
+                          contenido={<ScrollMercantil />}
+                        />
+                          
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

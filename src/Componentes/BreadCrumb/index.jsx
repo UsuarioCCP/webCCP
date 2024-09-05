@@ -9,8 +9,8 @@ const Breadcrumb = () => {
   if (pathnames.length === 0) return null;
 
   return (
-    <nav aria-label="breadcrumb" className="relative z-40 h-0 left-0 top-0 flex flex-col items-start w-full">
-      <ol className="list-none p-0 m-0 flex text-sm text-gray-600">
+    <nav aria-label="breadcrumb" className="relative z-40 h-20 bg-white flex flex-col items-start w-full">
+      <ol className="list-none h-20 p-0 m-0 flex text-sm text-gray-600">
         <li className="flex items-center">
           <NavLink 
             to="/" 

@@ -53,7 +53,7 @@ export default function HeaderDos() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="sticky z-50 bg-white shadow-lg">
+    <header className="sticky top-0 z-50 bg-white shadow-lg">
       <nav aria-label="Global" className="text-base mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
@@ -73,6 +73,7 @@ export default function HeaderDos() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex md:gap-7 lg:gap-8">
+            {/* Nuestra entidad */}
             <Popover className="group">
                 <PopoverButton className="flex items-center gap-2">
                     <HoverButton text="Nuestra Entidad" />
@@ -96,6 +97,7 @@ export default function HeaderDos() {
                 </PopoverPanel>
             </Popover>
 
+            {/* Noticia Mercantil */}
             <Popover className="group">
                 <PopoverButton className="flex items-center gap-2">
                         <NavLink to="/noticia-mercantil">
@@ -121,6 +123,33 @@ export default function HeaderDos() {
                 </PopoverPanel> */}
             </Popover>
 
+            {/* Circulo Afiliados */}
+            <Popover className="group">
+                <PopoverButton className="flex items-center gap-2">
+                        <NavLink to="/circulo-afiliados">
+                          <HoverButton text="Circulo Afiliados" />
+                        </NavLink>
+                    {/* <ChevronDownIcon className="size-5 group-data-[open]:rotate-180" /> */}
+                </PopoverButton>
+                {/* <PopoverPanel anchor="bottom" className="absolute -left-8 top-full z-10 mt-3 w-screen md:w-56 max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5" >
+                <div className="p-4">
+                    {products.map((item) => (
+                    <div
+                        key={item.name}
+                        className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+                    >
+                        <div className="flex-auto">
+                            <NavLink to={item.href}>
+                                <HoverButton text={item.name}/>
+                            </NavLink>
+                        </div>
+                    </div>
+                    ))}
+                </div>
+                </PopoverPanel> */}
+            </Popover>
+
+            {/* Centro Conciliación */}
             <Popover className="group">
                 <PopoverButton className="flex items-center gap-2">
                   <NavLink to="/centro-conciliacion">
@@ -146,6 +175,7 @@ export default function HeaderDos() {
                 </PopoverPanel>
             </Popover>
 
+            {/* Ley Transparencia */}
             <Popover className="group">
                 <PopoverButton className="flex items-center gap-2">
                   <NavLink to="/ley-transparencia">

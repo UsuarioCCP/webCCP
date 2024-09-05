@@ -8,6 +8,8 @@ import { Historia } from './Paginas/Institucional/Historia';
 import { QuienesSomos } from './Paginas/Institucional/QuinesSomos';
 import { PoliticaCalidad } from './Paginas/Institucional/PoliticaCalidad';
 import { Jurisdiccion } from './Paginas/Institucional/Jurisdicción';
+// Circulo Afliados
+import { CirculoAfiliados } from './Paginas/CirculoAfiliados';
 // Centro Conciliación
 import { CentroConciliacion } from './Paginas/CentroConciliación';
 // Ley Transparencia
@@ -44,6 +46,7 @@ import { PublicaciónHV } from './Paginas/Transparencia/InformacionEntidad/Publi
 // import axios from 'axios';
 import './App.css';
 
+
 function App() {
 
   return (
@@ -59,6 +62,8 @@ function App() {
             <Route path="/institucional/quienes-somos" element={<QuienesSomos />} />
             <Route path="/institucional/politica-calidad" element={<PoliticaCalidad />} />
             <Route path="/institucional/jurisdiccion" element={<Jurisdiccion />} />
+            {/* Ruta Circulo Afiliados */}
+            <Route path="/circulo-afiliados" element={<CirculoAfiliados />} />
             {/* Rutas Centro Conciliación */}
             <Route path="/centro-conciliacion" element={<CentroConciliacion />} />
             {/* Rutas Ley Trasnparecia */}
