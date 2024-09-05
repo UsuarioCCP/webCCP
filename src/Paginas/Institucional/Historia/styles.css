@@ -1,6 +1,6 @@
 .bg-historia{
     background-image: url('https://i.postimg.cc/QMBjgTqy/Pamplona-antigua.jpg');
-    background-position: calc(0px);
+    background-position: 0px;
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;

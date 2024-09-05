@@ -188,9 +188,9 @@ const Jurisdiccion = () => {
   return (
     <LayoutGeneral>
       <div className="px-4 bg-white rounded-lg shadow-lg bg-jurisdiccion">
-        <div className="fixed overlay-jurisdiccion w-full h-svh"></div>
+        <div className="fixed overlay-jurisdiccion w-full h-lvh"></div>
         <div className="relative z-30 pt-2">
-          <h2 className="w-full m-8 my-2 text-4xl font-bold leading-tight text-center text-gradient-rose drop-shadow-xl">
+          <h2 className="w-full my-2 text-4xl font-bold leading-tight text-center text-gradient-rose drop-shadow-xl">
             Nuestra Jusrisdicción
           </h2>
           <div className="text-center my-10 mx-2 lg:mx-48 text-gray-900 sm:text-xl sm:leading-9">

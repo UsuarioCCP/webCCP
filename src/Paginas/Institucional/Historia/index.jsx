@@ -10,7 +10,7 @@ const Historia = () => {
       <div className="p-4 bg-white rounded-lg shadow-lg bg-historia">
         <div className="fixed overlay-historia w-full h-lvh"></div>
         <div className="relative mb-10 z-30 pt-2">
-          <h2 className="w-full m-8 my-2 text-4xl font-bold leading-tight text-center text-gradient-rose drop-shadow-xl">
+          <h2 className="w-full my-2 text-4xl font-bold leading-tight text-center text-gradient-rose drop-shadow-xl">
             Nuestra Historia
           </h2>
           <div className="text-center my-10 mx-2 lg:mx-48 text-gray-900 sm:text-xl sm:leading-9">

@@ -82,9 +82,9 @@ const QuienesSomos = () => {
   return (
     <LayoutGeneral>
       <div className="bg-quienes-somos">
-        <div className="fixed overlay-quienes-somos z-10 w-full h-svh"></div>
+        <div className="fixed overlay-quienes-somos z-10 w-full h-lvh"></div>
         <div className="relative z-20 pt-2">
-          <h2 className="w-full m-8 my-2 text-4xl font-bold leading-tight text-center text-gradient-rose drop-shadow-xl">
+          <h2 className="w-full my-2 text-4xl font-bold leading-tight text-center text-gradient-rose drop-shadow-xl">
             ¿Quienes Somos?
           </h2>
           {/* <p className="text-center">
