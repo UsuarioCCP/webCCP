@@ -41,14 +41,14 @@ const CentroConciliacion = () => {
       </section>
       <BannerGeneral
             background="https://i.postimg.cc/T2sLQgzc/fondo-conciliacion.jpg"
-            title="¡Centro Conciliación!"
+            // title="¡Centro Conciliación!"
             description={TextBanner}
         />
       <section className="bg-white ">
-        <div className="container lg:w-2/3 mx-auto flex flex-wrap pt-4 ">
+        <div className="container lg:w-2/3 mx-auto flex lg:flex-wrap pt-4 ">
           {/* Requisitos Tarifas */}
-          <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink lg:m-5">
-            <div className="flex items-center justify-end">
+          <div className="w-full md:w-1/3 p-6 flex flex-grow flex-shrink lg:m-5">
+            <div className="flex sm:flex-col sm:flex-grow md:flex-row items-center justify-end">
               {services.map((item) => (
                 <CardGeneral
                   nombre={item.name}
@@ -83,7 +83,7 @@ const CentroConciliacion = () => {
         </div>
       </section> */}
 
-      <section className="relative isolate overflow-hidden bg-white px-6 py-16 sm:py-16 lg:px-8">
+      <section className="relative isolate overflow-hidden bg-white px-6 md:py-16 sm:py-8 lg:px-8">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20" />
         <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
         <div className="mx-auto max-w-2xl lg:max-w-4xl">
@@ -93,12 +93,12 @@ const CentroConciliacion = () => {
             className="mx-auto h-12"
           /> */}
           <figure className="my-5">
-            <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-xl sm:leading-9">
+            <blockquote className="text-center text-base md:text-xl font-semibold leading-8 text-gray-900 sm:text-xl sm:leading-9">
               <p>
               Nuestro centro de conciliación está aquí para ayudarte a resolver conflictos de forma amigable y efectiva. Ofrecemos un enfoque justo y neutral para resolver conflictos y alcanzar acuerdos que satisfagan a todas las partes. Con nuestro equipo de expertos, podrás enfrentar y superar cualquier desacuerdo de manera rápida y profesional. ¡Consulta con nosotros y encuentra la solución adecuada!
               </p>
             </blockquote>
-            <figcaption className="mt-10">
+            <figcaption className="m-2 md:mt-10">
               {/* <img
                 alt=""
                 src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
@@ -106,8 +106,8 @@ const CentroConciliacion = () => {
               /> */}
               <div className="mt-4 flex items-center justify-center space-x-3 text-base">
                 {/* <div className="font-semibold text-gray-900">Judith Black</div> */}
-                <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-                  <div className="relative flex flex-wrap justify-center rounded-full px-3 py-3 text-sm space-y-2 leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                <div className="sm:mb-8 sm:flex sm:justify-center">
+                  <div className="relative flex flex-wrap justify-center md:rounded-full px-3 py-3 text-sm space-y-2 leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                     <span>
                       Horario de atención: Lunes a Viernes, de 8:00 AM a 12:00 M
                       y de 2:00 PM a 6:00 PM.
