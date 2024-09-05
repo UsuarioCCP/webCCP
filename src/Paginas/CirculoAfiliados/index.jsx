@@ -9,6 +9,7 @@ const ItemButton = ({ nombre, onClick }) => (
       <img
         className="mask mask-circle bg-slate-400 transition-transform duration-300 group-hover:scale-105"
         src="https://img.daisyui.com/images/stock/photo-1567653418876-5bb0e566e1c2.webp"
+        alt="mask-circulo"
       />
     </div>
     <button
