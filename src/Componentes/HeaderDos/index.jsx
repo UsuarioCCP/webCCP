@@ -171,9 +171,9 @@ export default function HeaderDos() {
                 </PopoverPanel>
             </Popover>
 
-          <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
+          {/* <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
             Company
-          </a>
+          </a> */}
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="/" className="text-sm font-semibold leading-6 text-gray-900">
