@@ -90,7 +90,7 @@ function App() {
               <Route path="calendario-actividades" element={<CalendarioActividades />} />
               <Route path="info-decisiones" element={<InformacionDecisiones />} />
               <Route path="autoridades-vigilantes" element={<AutoridadesVigilantes />} />
-              <Route path="publicaciones-hv" element={<PublicaciónHV/>} />
+              <Route path="publicacion-hv" element={<PublicaciónHV/>} />
             </Route>
           </Routes>
         </div>

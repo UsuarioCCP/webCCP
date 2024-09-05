@@ -34,7 +34,7 @@ const SidebarInformacionEntidad = () => {
                 to={item.to}
                 className={({ isActive }) =>
                   isActive
-                    ? 'block text-dorado font-bold bg-gray-300 p-3 rounded-lg shadow-lg'
+                    ? 'block text-gradient-rose font-bold bg-gray-300 p-3 rounded-lg shadow-lg'
                     : 'block text-gray-700 hover:text-dorado hover:bg-gray-200 transition-all p-3 rounded-lg'
                 }
               >

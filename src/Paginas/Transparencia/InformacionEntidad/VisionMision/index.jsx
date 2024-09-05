@@ -7,8 +7,8 @@ const VisionMision = () => {
 
   return (
     <div>
-      <div className="bg-quienes-somos">
-        <div className="fixed overlay-quienes-somos z-10 w-full h-svh"></div>
+      <div className="bg-vision-mision">
+        <div className="fixed overlay-vision-mision z-10 w-3/4 h-svh"></div>
         <div className="relative z-20 pt-2">
           <h2 className="w-full m-8 my-2 text-4xl font-bold leading-tight text-center text-gradient-rose drop-shadow-xl">
             ¿Vision y Mision?
@@ -23,14 +23,14 @@ const VisionMision = () => {
           <div className="w-full mb-4">
             <div className="h-1 mx-auto gradient-red-yellow w-2/3 opacity-25 my-0 py-0 rounded-t"></div>
           </div>
-          <div className="grid justify-items-center grid-cols-1 lg:grid-cols-5">
-            <div className="col-span-3">
+          <div className="flex ">
+ 
               <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start">
-                <div className="justify-center w-80 lg:w-full">
+                <div className="flex justify-center ">
                   {/* <div className="w-full lg:pr-4 my-10">
                     <img src="ruta/a/tu/imagen-vision.jpg" alt="Visión" className="w-full h-auto rounded-lg mb-4 lg:mb-0" />
                   </div> */}
-                  <div className="w-full lg:w-5/6">
+                  <div className="w-2/3">
                     <div className="bg-gray-100 bg-opacity-70 shadow-lg border rounded my-4 py-5 px-10">
                       <h3 className="text-2xl text-gradient-rose font-semibold mb-2">
                         Misión
@@ -81,7 +81,7 @@ const VisionMision = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+
             </div>
           </div>
         </div>
