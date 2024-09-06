@@ -25,9 +25,9 @@ const SidebarInformacionEntidad = () => {
   return (
     <div className="flex h-full">
       {/* Columna izquierda - Menú del SidebarLeyTransparencia */}
-      <div className="w-1/4 my-5 bg-white p-6 border-r border-gray-300">
-        <ul className="menu bg-base-200 rounded-box w-72">
-        <li className="menu-title">Title</li>
+      <div className="w-1/4 bg-white p-6 border-r border-gray-300">
+        <ul className="menu bg-base-200 rounded-box w-full">
+        <li className="menu-title font-bold">Información de la Entidad</li>
           {menuItems.map((item) => (
             <li key={item.to}>
               <NavLink
@@ -46,7 +46,7 @@ const SidebarInformacionEntidad = () => {
       </div>
 
       {/* Columna derecha - Contenido dinámico */}
-      <div className="w-3/4 bg-white p-8">
+      <div className="w-3/4 bg-white p-2">
         <Outlet />
       </div>
     </div>

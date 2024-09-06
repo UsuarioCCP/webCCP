@@ -56,7 +56,7 @@ const employees = [
         id: 6,
         name: 'Eve Black',
         position: 'Jefe',
-        dependence: "Promoción y Desarrollo",
+        dependence: "Promoción, Desarrollo y Afiliados",
         email: 'eve.black@example.com',
         phone: '123-456-7896',
         extension: '107',
@@ -66,7 +66,7 @@ const employees = [
         id: 7,
         name: 'Louis Green',
         position: 'Auxiliar',
-        dependence: "Afiliados, Promoción y Desarrollo",
+        dependence: "Promoción, Desarrollo y Afiliados",
         email: 'david.green@example.com',
         phone: '123-456-7895',
         extension: '106',
@@ -156,59 +156,58 @@ const employees = [
 ];
 
 const EmployeeCard = ({ employee }) => {
-    return (
-      <div className="relative w-60 m-2 justify-self-center">
-        {/* <div className="relative card bg-base-100 shadow-xl rounded-lg">
-          <figure className="px-4 pt-4">
+  return (
+    <div className="relative w-60 m-2 justify-self-center">
+      <div className="relative group duration-500 cursor-pointer group overflow-hidden text-gray-50 h-72 w-56 hover:duration-700 border border-orange-300 rounded-2xl">
+        <div className="relative card border rounded-none bg-gray-200 shadow-xl text-gray-800">
+          <figure className="px-4 pt-2">
             <img src={ImgC} alt="" className="relative" />
             <img src={employee.photo} alt={employee.name} className="absolute rounded-full w-24 h-24 object-cover" />
           </figure>
-            <div className="col-span-1 card-body items-center text-center p-2">
-              <h2 className="card-title text-sm text-gradient-rose">{employee.name}</h2>
-              <p className="text-xs font-bold">{employee.position}</p>
-              <p className="text-xs font-semibold">{employee.dependence}</p>
-              <p className="text-xs">{employee.email}</p>
-              <p className="text-xs">{employee.phone} <span>Ext. {employee.extension}</span></p>
-            </div>
-        </div> */}
-
-        <div className="relative group duration-500 cursor-pointer group overflow-hidden text-gray-50 h-72 w-56 hover:duration-700 border border-orange-300 rounded-2xl">
-          <div className="relative card border rounded-none bg-gray-200 shadow-xl text-gray-800">
-            <figure className="px-4 pt-2">
-              <img src={ImgC} alt="" className="relative" />
-              <img src={employee.photo} alt={employee.name} className="absolute rounded-full w-24 h-24 object-cover" />
-            </figure>
-              <div className="col-span-1 card-body items-center text-center my-5 p-2">
-                <h2 className="card-title text-sm text-gradient-rose">{employee.name}</h2>
-              </div>
-            </div>
-            <div className="absolute bg-gray-100 border border-orange-300 rounded-lg -bottom-24 w-56 px-3 pb-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500">
-              <span className="text-gray-800 font-bold text-md my-2">Información</span>
-              <span className="text-gray-800 text-xs font-bold">{employee.position}</span>
-              <p className="text-gray-800 text-xs font-semibold">{employee.dependence}</p>
-              <p className="text-gray-800 text-xs">{employee.email}</p>
-              <p className="text-gray-800 text-xs">{employee.phone} <span>Ext. {employee.extension}</span></p>
-            </div>
-          
-
+          <div className="col-span-1 card-body items-center text-center my-5 p-2">
+            <h2 className="card-title text-sm text-gradient-rose">{employee.name}</h2>
+          </div>
         </div>
-
-
+        <div className="absolute bg-gray-100 border border-orange-300 rounded-lg -bottom-24 w-56 px-3 pb-3 flex flex-col gap-1 group-hover:-bottom-0 group-hover:duration-600 duration-500">
+          <span className="text-gray-800 font-bold text-md my-2">Información</span>
+          <span className="text-gray-800 text-xs font-bold">{employee.position}</span>
+          <p className="text-gray-800 text-xs font-semibold">{employee.dependence}</p>
+          <p className="text-gray-800 text-xs">{employee.email}</p>
+          <p className="text-gray-800 text-xs">{employee.phone} <span>Ext. {employee.extension}</span></p>
+        </div>
       </div>
-    );
-  };
-  
-  export default EmployeeCard;
-  
-  
+    </div>
+  );
+};
+
 const EmployeDirectory = () => {
+  // Agrupar empleados por áreas
+  const employeesByArea = employees.reduce((groups, employee) => {
+    const { dependence } = employee;
+    if (!groups[dependence]) {
+      groups[dependence] = [];
+    }
+    groups[dependence].push(employee);
+    return groups;
+  }, {});
+
   return (
-    <div className="grid w-5/6 place-content-around lg:grid-cols-4 md:grid-cols-2 gap-x-2 gap-y-3 m-5">
-      {employees.map(employee => (
-        <EmployeeCard key={employee.id} employee={employee} />
+    <div className="w-5/6 m-5">
+      {Object.entries(employeesByArea).map(([area, employees]) => (
+        <div key={area} className="mb-10">
+          {/* Título del área */}
+          <h2 className="text-2xl font-bold text-gray-800 mb-5 border-b-2 border-orange-300">{area}</h2>
+
+          {/* Empleados en filas de máximo 4 */}
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-x-2 gap-y-3">
+            {employees.map(employee => (
+              <EmployeeCard key={employee.id} employee={employee} />
+            ))}
+          </div>
+        </div>
       ))}
     </div>
   );
 };
 
-export {EmployeDirectory};
+export { EmployeDirectory };

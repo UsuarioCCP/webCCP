@@ -8,9 +8,9 @@ const VisionMision = () => {
   return (
     <div>
       <div className="bg-vision-mision">
-        <div className="fixed overlay-vision-mision z-10 w-3/4 h-svh"></div>
+        <div className="fixed overlay-vision-mision z-10 w-3/4 h-lvh"></div>
         <div className="relative z-20 pt-2">
-          <h2 className="w-full m-8 my-2 text-4xl font-bold leading-tight text-center text-gradient-rose drop-shadow-xl">
+          <h2 className="w-full my-2 text-4xl font-bold leading-tight text-center text-gradient-rose drop-shadow-xl">
             ¿Vision y Mision?
           </h2>
           <div className="text-center my-10 mx-2 lg:mx-48 font-normal text-gray-900 sm:text-xl sm:leading-9">

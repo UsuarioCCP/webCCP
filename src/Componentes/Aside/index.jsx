@@ -4,7 +4,7 @@ import './styles.css'
 
 const Aside = () => {
   return (
-    <div className="fixed flex flex-col right-0 lg:top-36 z-50 h-52 gap-10">
+    <div className="fixed flex flex-col right-0 lg:top-36 z-50 h-auto gap-10">
       <div className="drawer drawer-end ">
         <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">

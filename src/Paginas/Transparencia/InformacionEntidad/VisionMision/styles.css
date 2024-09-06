@@ -20,35 +20,3 @@
   top: 0;
   right: 0;
  }
-
-.values-list {
-  width: 39rem;
-  position: relative;
-  overflow: hidden;
-  /* background: #f8fafc; */
-}
-
-.inner {
-  display: flex;
-  gap: 2rem;
-  animation: loop 30s linear infinite;
-  padding-right: 3rem;
-}
-
-.fade {
-  position: absolute;
-  background: linear-gradient(90deg, #f8fafc 0%, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 70%, #f8fafc 100%);
-  inset: 0;
-  pointer-events: none;
-  height: 3.5rem;
-  top: 4rem;
-}
-
-@keyframes loop {
-  0% {
-      transform: translateX(0);
-  }
-  100% {
-      transform: translateX(calc(-100% - 14rem));
-  }
-}
