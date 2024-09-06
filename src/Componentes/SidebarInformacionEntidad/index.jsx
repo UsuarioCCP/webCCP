@@ -12,7 +12,7 @@ const SidebarInformacionEntidad = () => {
     { name: 'Directorio Empleados y Contratistas', to: 'dir-empleados' },
     { name: 'Directorio Entidades', to: 'dir-entidades' },
     { name: 'Directorio Agremiaciones', to: 'dir-agremiaciones' },
-    { name: 'Servicios al Publico', to: 'servicios-al-publico' },
+    { name: 'Servicios de la entidad', to: 'servicios-entidad' },
     { name: 'Procedimientos para la toma de decisiones', to: 'procedimientos-decisiones' },
     { name: 'Mecanismo de Presentación PQRSF', to: 'presentacion-pqrsf' },
     { name: 'Calendario Actividades', to: 'calendario-actividades' },

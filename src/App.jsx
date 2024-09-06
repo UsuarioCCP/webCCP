@@ -34,7 +34,7 @@ import { Directorioinstitucional } from './Paginas/Transparencia/InformacionEnti
 import { DirectorioEmpleados } from './Paginas/Transparencia/InformacionEntidad/DirectorioEmpleados';
 import { DirectorioEntidades } from './Paginas/Transparencia/InformacionEntidad/DirectorioEntidades';
 import { DirectorioAgremiaciones } from './Paginas/Transparencia/InformacionEntidad/DirectorioAgremiaciones';
-import { ServiciosAlPublico } from './Paginas/Transparencia/InformacionEntidad/ServiciosAlPublico';
+import { ServiciosEntidad } from './Paginas/Transparencia/InformacionEntidad/ServiciosEntidad';
 import { PorcedimientoDecisiones } from './Paginas/Transparencia/InformacionEntidad/ProcedimientoDecisiones';
 import { PresentacionPQRSF } from './Paginas/Transparencia/InformacionEntidad/PresentacionPQRSF';
 import { CalendarioActividades } from './Paginas/Transparencia/InformacionEntidad/CalendarioActividades';
@@ -89,7 +89,7 @@ function App() {
               <Route path="dir-empleados" element={<DirectorioEmpleados />} />
               <Route path="dir-entidades" element={<DirectorioEntidades />} />
               <Route path="dir-agremiaciones" element={<DirectorioAgremiaciones />} />
-              <Route path="servicios-al-publico" element={<ServiciosAlPublico />} />
+              <Route path="servicios-entidad" element={<ServiciosEntidad />} />
               <Route path="procedimientos-decisiones" element={<PorcedimientoDecisiones />} />
               <Route path="presentacion-pqrsf" element={<PresentacionPQRSF />} />
               <Route path="calendario-actividades" element={<CalendarioActividades />} />
