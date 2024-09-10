@@ -58,7 +58,7 @@ const FuncionesDeberes = () => {
       <div className="">
         <div className="fixed overlay-vision-mision z-10 w-3/4 h-lvh"></div>
         <div className="relative z-20 pt-2">
-          <h2 className="w-full text-4xl font-semibold mb-8 leading-tight text-center text-gradient-rose drop-shadow-xl">
+          <h2 className="w-full my-2 text-4xl font-bold leading-tight text-center text-gradient-rose drop-shadow-xl">
             Funciones y Deberes
           </h2>
           <div className="text-center my-10 mx-2 lg:mx-48 font-normal text-gray-900 sm:text-xl sm:leading-9">

@@ -58,7 +58,7 @@ const Aside = () => {
             </li>
 
             {/* Sidebar content here */}
-            <PopoverGroup className="md:flex md:flex-wrap justify-start md:gap-7 lg:gap-2">
+            <PopoverGroup className="md:flex md:flex-wrap justify-start lg:gap-2">
 
                 {/* Compra Certificados */}
                   <Popover className="group item">

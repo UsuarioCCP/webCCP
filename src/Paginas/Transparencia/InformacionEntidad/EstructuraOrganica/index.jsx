@@ -9,7 +9,7 @@ const Organigrama = () => {
       {/* Content */}
       <div className="relative z-20 max-w-7xl mx-auto px-4">
         {/* Title */}
-        <h2 className="text-4xl font-semibold mb-8 leading-tight text-center text-gradient-rose drop-shadow-xl">
+        <h2 className="w-full my-2 text-4xl font-bold leading-tight text-center text-gradient-rose drop-shadow-xl">
           Organigrama
         </h2>
 

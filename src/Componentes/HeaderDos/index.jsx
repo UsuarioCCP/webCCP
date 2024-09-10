@@ -58,7 +58,7 @@ export default function HeaderDos() {
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Cámara de Comercio de Pamplona</span>
-            <img src="https://i.postimg.cc/9FDdqdpT/Logo-Camara.png" alt="logo camara" className="relative w-16" />
+            <img src="https://i.postimg.cc/9FDdqdpT/Logo-Camara.png" alt="logo camara" className="relative w-20" />
             {/* <img alt="" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" className="h-8 w-auto" /> */}
           </a>
         </div>
@@ -72,7 +72,7 @@ export default function HeaderDos() {
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex md:gap-7 lg:gap-8">
+        <PopoverGroup className="hidden lg:flex  lg:gap-x-2">
             {/* Nuestra entidad */}
             <Popover className="group">
                 <PopoverButton className="flex items-center gap-2">
