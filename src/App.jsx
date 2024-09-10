@@ -74,7 +74,7 @@ function App() {
               <Route path="tramites" element={<Tramites />} />
               <Route path="participa" element={<Participa />} />
               <Route path="datos-abiertos" element={<DatosAbiertos />} />
-              <Route path="info-grupos" element={<InfoGruposInteres />} />
+              <Route path="info-grupos-interes" element={<InfoGruposInteres />} />
               <Route path="reporte-entidad" element={<ReporteEntidad />} />
               <Route path="atencion-ciudadania" element={<AtencionCiudadania />} />
               <Route path="noticias" element={<Noticias />} />
