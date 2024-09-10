@@ -12,6 +12,10 @@ import { Jurisdiccion } from './Paginas/Institucional/Jurisdicción';
 import { CirculoAfiliados } from './Paginas/CirculoAfiliados';
 // Centro Conciliación
 import { CentroConciliacion } from './Paginas/CentroConciliación';
+import { RequisitosTarifas } from './Paginas/CentroConciliación/RequisitosTarifas';
+import { Conciliadores } from './Paginas/CentroConciliación/Conciliadores';
+import { Reglamento } from './Paginas/CentroConciliación/Reglamento';
+
 // Ley Transparencia
 import { LeyTransparencia } from './Paginas/Transparencia';
 import { InfoEntidad } from './Paginas/Transparencia/InformacionEntidad';
@@ -66,8 +70,11 @@ function App() {
             <Route path="/circulo-afiliados" element={<CirculoAfiliados />} />
             {/* Rutas Centro Conciliación */}
             <Route path="/centro-conciliacion" element={<CentroConciliacion />} />
+            <Route path="/centro-conciliacion/requisitos-tarifas" element={<RequisitosTarifas />} />
+            <Route path="/centro-conciliacion/conciliadores" element={<Conciliadores />} />
+            <Route path="/centro-conciliacion/reglamento" element={<Reglamento />} />
             {/* Rutas Ley Trasnparecia */}
-            <Route path="/ley-transparencia" element={<LeyTransparencia />}>
+            <Route path="/ley-transparencia" element={<LeyTransparencia />} >
               <Route path="normatividad" element={<Normatividad />} />
               <Route path="contratacion" element={<Contratacion />} />
               <Route path="planeacion" element={<Planeacion />} />
