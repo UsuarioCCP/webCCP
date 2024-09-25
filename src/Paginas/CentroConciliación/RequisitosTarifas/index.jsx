@@ -23,6 +23,51 @@ const funcionesYDeberes = [
   },
 ];
 
+const tarifasVigentes = [
+  { id:1,
+    cuantia:"De 0 hasta $9.421.471",  
+    cuantiaUVT:"De 0 UVT hasta 200.18 UVT",
+    tarifa:"$353.458 + $67.157",
+    tarifaUVT:"7.51 UVT",
+    valorTotal:"$420.615", 
+  },
+  { id:2,
+    cuantia:"De $9.421.942 hasta $15.310.244",  
+    cuantiaUVT:"De 200.19 UVT hasta 325.30 UVT",
+    tarifa:"$510.184 + $96.935",
+    tarifaUVT:"10.84 UVT",
+    valorTotal:"$607.119", 
+  },
+  { id:3,
+    cuantia:"De $15.310.715 hasta $20.020.980",  
+    cuantiaUVT:"De 325.31 UVT hasta 425.39 UVT",
+    tarifa:"$600.078 + $114.015",
+    tarifaUVT:"12.75 UVT",
+    valorTotal:"$714.093", 
+  },
+  { id:4,
+    cuantia:"De $20.021.451 hasta $41.219.527",  
+    cuantiaUVT:"De 425.40 UVT hasta 875.80 UVT",
+    tarifa:"$824.578 + $156.670",
+    tarifaUVT:"17.52 UVT",
+    valorTotal:"$981.248", 
+  },
+  { id:5,
+    cuantia:"De $41.219.997 hasta $61.240.036",  
+    cuantiaUVT:"De 875.81 UVT hasta 1301.18 UVT",
+    tarifa:"$981.305 + $186.448",
+    tarifaUVT:"20.85 UVT",
+    valorTotal:"$1.167.753", 
+  },
+  { id:6,
+    cuantia:"Más de $61.240.507",  
+    cuantiaUVT:"Más de 1301.19 UVT",
+    tarifa:"3.5% + IVA 19%",
+    tarifaUVT:"",
+    valorTotal:"", 
+  },
+];
+
 const formatDescription = (text) => {
   const lines = text.split('\n');
   const listItems = [];
@@ -117,44 +162,35 @@ const RequisitosTarifas = () => {
           </div>
 
           <div className="flex flex-wrap justify-center">
-            <h2 className="w-full my-5 text-4xl font-bold leading-tight text-center text-gradient-rose drop-shadow-xl">
-              Tarifas de conciliación <span>2024</span>
-            </h2>
+            <div className="flex items-center">
+              <h2 className="w-full my-5 text-4xl font-bold leading-tight text-center text-gradient-rose drop-shadow-xl">
+                Tarifas de conciliación <span>2024</span>
+              </h2>
+              <img className="w-52" src="https://i.postimg.cc/Wz9RD81B/CENTRO-CONCILIACION-2.png" alt="logo-conciliación" />
+            </div>
+
             <div className="w-2/3 overflow-x-auto">
-            <table className="table">
-                {/* head */}
-                <thead>
-                <tr>
-                    <th></th>
-                    <th>Rango</th>
-                    <th>Valor</th>
-                    <th>Favorite Color</th>
+
+            <table className="table border my-5 border-gray-800">
+              {/* head */}
+              <thead>
+                <tr className="bg-red-100">
+                  <th className="font-semibold text-lg border border-gray-700">CUANTIA</th>
+                  <th className="font-semibold text-lg border border-gray-700">TARIFA + IVA (19%)</th>
+                  <th className="font-semibold text-lg border border-gray-700">VALOR TOTAL</th>
                 </tr>
-                </thead>
-                <tbody>
-                {/* row 1 */}
-                <tr className="bg-base-200">
-                    <th>1</th>
-                    <td>Cy Ganderton</td>
-                    <td>Quality Control Specialist</td>
-                    <td>Blue</td>
-                </tr>
-                {/* row 2 */}
-                <tr>
-                    <th>2</th>
-                    <td>Hart Hagerty</td>
-                    <td>Desktop Support Technician</td>
-                    <td>Purple</td>
-                </tr>
-                {/* row 3 */}
-                <tr>
-                    <th>3</th>
-                    <td>Brice Swyre</td>
-                    <td>Tax Accountant</td>
-                    <td>Red</td>
-                </tr>
-                </tbody>
+              </thead>
+              <tbody>
+                {tarifasVigentes.map((item, index) => (
+                  <tr key={item.id} className={index % 2 === 0 ? "bg-base-200 border border-gray-800" : ""}>
+                    <td className="border border-gray-700">{item.cuantia} <br /> {item.cuantiaUVT}</td>
+                    <td className="border border-gray-700">{item.tarifa} <br /> {item.tarifaUVT}</td>
+                    <td className="border border-gray-700">{item.valorTotal || "N/A"}</td> {/* Mostrar "N/A" si no hay valor total */}
+                  </tr>
+                ))}
+              </tbody>
             </table>
+
             </div>
           </div>
 
