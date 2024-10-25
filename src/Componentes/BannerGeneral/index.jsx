@@ -25,7 +25,7 @@ const BannerGeneral = ({ background, title, description, children, imagen, icon 
 
           {/* Renderiza la imagen solo si 'img' está presente */}
           {imagen && (
-            <img className="flex w-52" src={imagen} alt="Optional image" />
+            <img className="flex w-52" src={imagen} alt="Optional imagen" />
           )}
           {icon && (
             <i className={`${icon} text-5xl`}></i> 
