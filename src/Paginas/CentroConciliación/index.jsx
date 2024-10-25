@@ -43,7 +43,7 @@ const CentroConciliacion = () => {
         background="https://i.postimg.cc/yNDpSJP3/fondo-conciliacion.jpg"
         // title="¡Centro Conciliación!"
         description={TextBanner}
-        img="https://i.postimg.cc/tR37qmSV/CENTRO-CONCILIACION-2.png"
+        imagen="https://i.postimg.cc/tR37qmSV/CENTRO-CONCILIACION-2.png"
       /> 
 
       <section className="bg-white ">

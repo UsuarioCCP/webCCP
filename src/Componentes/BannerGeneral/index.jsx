@@ -1,6 +1,6 @@
 import React from "react";
 
-const BannerGeneral = ({ background, title, description, children, img, icon }) => {
+const BannerGeneral = ({ background, title, description, children, imagen, icon }) => {
   return (
     <div className="relative flex justify-center self-center mb-2 w-11/12 rounded-xl overflow-hidden mx-auto">
       <div
@@ -24,8 +24,8 @@ const BannerGeneral = ({ background, title, description, children, img, icon }) 
           </div>
 
           {/* Renderiza la imagen solo si 'img' está presente */}
-          {img && (
-            <img className="flex w-52" src={img} alt="Optional image" />
+          {imagen && (
+            <img className="flex w-52" src={imagen} alt="Optional image" />
           )}
           {icon && (
             <i className={`${icon} text-5xl`}></i> 
