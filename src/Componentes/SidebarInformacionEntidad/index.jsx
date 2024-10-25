@@ -44,10 +44,10 @@ const SidebarInformacionEntidad = () => {
         </div>
       </section>
       <BannerGeneral
-        background="https://i.postimg.cc/yNDpSJP3/fondo-conciliacion.jpg"
+        background="https://i.postimg.cc/sxrLV2nq/info-entidad.png"
         // title="¡Centro Conciliación!"
         description={TextBanner}
-        img=""
+        icon="fa-solid fa-left-long"
       />
     </div>
   );

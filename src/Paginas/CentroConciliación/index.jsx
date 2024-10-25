@@ -31,8 +31,8 @@ const CentroConciliacion = () => {
 
   return (
     <LayoutGeneral>
-      <section className="py-8">
-        <h2 className="w-full my-8 text-4xl font-bold leading-tight text-center text-gradient-rose">
+      <section className="py-2">
+        <h2 className="w-full my-4 text-4xl font-bold leading-tight text-center text-gradient-rose">
             Centro Conciliación Cámara de Comercio de Pamplona
         </h2>
         <div className="w-full mb-4">
@@ -43,7 +43,7 @@ const CentroConciliacion = () => {
         background="https://i.postimg.cc/yNDpSJP3/fondo-conciliacion.jpg"
         // title="¡Centro Conciliación!"
         description={TextBanner}
-        img="https://i.postimg.cc/Wz9RD81B/CENTRO-CONCILIACION-2.png"
+        img="https://i.postimg.cc/tR37qmSV/CENTRO-CONCILIACION-2.png"
       /> 
 
       <section className="bg-white ">

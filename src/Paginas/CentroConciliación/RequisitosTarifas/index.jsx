@@ -185,7 +185,7 @@ const RequisitosTarifas = () => {
                   <tr key={item.id} className={index % 2 === 0 ? "bg-base-200 border border-gray-800" : ""}>
                     <td className="border border-gray-700">{item.cuantia} <br /> {item.cuantiaUVT}</td>
                     <td className="border border-gray-700">{item.tarifa} <br /> {item.tarifaUVT}</td>
-                    <td className="border border-gray-700">{item.valorTotal || "N/A"}</td> {/* Mostrar "N/A" si no hay valor total */}
+                    <td className="border border-gray-700">{item.valorTotal || ""}</td> {/* Mostrar "en blanco" si no hay valor total */}
                   </tr>
                 ))}
               </tbody>

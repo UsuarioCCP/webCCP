@@ -43,10 +43,10 @@ const SidebarLeyTransparencia = () => {
         </div>
       </section>
       <BannerGeneral
-        background="https://i.postimg.cc/yNDpSJP3/fondo-conciliacion.jpg"
+        background="https://i.postimg.cc/8PVG5pJ1/ley-transparencia.jpg"
         // title="¡Centro Conciliación!"
         description={TextBanner}
-        img=""
+        icon="fa-solid fa-left-long"
       />
     </div>
   );
