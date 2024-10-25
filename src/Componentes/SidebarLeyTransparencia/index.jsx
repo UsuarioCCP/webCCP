@@ -26,8 +26,11 @@ const SidebarLeyTransparencia = () => {
   ];
 
   const TextBanner =
-    "En cumplimiento de la Ley 1712 de 2014, la Cámara de Comercio de Pamplona pone a disposición de los ciudadanos, grupos de valor y organismos de control, la sección de Transparencia y Acceso a la Información Pública, en donde podrán conocer y consultar la información que esta entidad genera, en el desarrollo de su misión y funciones. En este sitio se proporciona y facilita el acceso a la misma en los términos más amplios posibles en el momento. A continuación, haga clíc en clic en la opción que desee de la lista que se encuentra en la parte izquierda.";
-
+    <>
+    En cumplimiento de la Ley 1712 de 2014, la Cámara de Comercio de Pamplona pone a disposición de los ciudadanos, grupos de valor y organismos de control, la sección de Transparencia y Acceso a la Información Pública, en donde podrán conocer y consultar la información que esta entidad genera, en el desarrollo de su misión y funciones. En este sitio se proporciona y facilita el acceso a la misma en los términos más amplios posibles en el momento. 
+    <br />
+    A continuación, haga clíc en clic en la opción que desee de la lista que se encuentra en la parte izquierda.
+    </>
   // Contenido por defecto cuando no hay selección
   const defaultContent = (
     <div className="">

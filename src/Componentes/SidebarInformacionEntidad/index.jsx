@@ -1,5 +1,6 @@
 import React from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, useLocation } from "react-router-dom";
+import { BannerGeneral } from "../../Componentes/BannerGeneral";
 
 const SidebarInformacionEntidad = () => {
   // Array con los elementos del menú
@@ -21,6 +22,41 @@ const SidebarInformacionEntidad = () => {
     { name: 'Publicación de Hojas de Vida', to: 'publicacion-hv' },
     // Agrega más elementos aquí según lo necesites
   ];
+
+  const TextBanner = (
+    <>
+      En esta sección se encuentra la información relevante sobre la entidad sus funciones, procesos, directorios, calendario de actividades, entes que los vigilan, hojas de vida, entre otros.
+      <br />
+      A continuación, haga clic en la opción que desee de la lista que se encuentra en la parte izquierda.
+    </>
+  );
+
+  
+  // Contenido por defecto cuando no hay selección
+  const defaultContent = (
+    <div className="">
+      <section className="">
+        <h2 className="w-full my-4 text-4xl font-bold leading-tight text-center text-gradient-rose">
+          Información de la entidad
+        </h2>
+        <div className="w-full mb-4">
+          <div className="h-1 mx-auto gradient-red-yellow w-96 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+      </section>
+      <BannerGeneral
+        background="https://i.postimg.cc/yNDpSJP3/fondo-conciliacion.jpg"
+        // title="¡Centro Conciliación!"
+        description={TextBanner}
+        img=""
+      />
+    </div>
+  );
+
+  // Hook para obtener la ruta actual
+  const location = useLocation();
+
+  // Comprobación si la ruta actual no coincide con ninguna del menú
+  const isDefaultContent = location.pathname === "/ley-transparencia/info-entidad";
 
   return (
     <div className="flex h-full">
@@ -46,8 +82,8 @@ const SidebarInformacionEntidad = () => {
       </div>
 
       {/* Columna derecha - Contenido dinámico */}
-      <div className="w-3/4 bg-white p-2">
-        <Outlet />
+      <div className="w-3/4 bg-white">
+      {isDefaultContent ? defaultContent : <Outlet />}
       </div>
     </div>
   );
