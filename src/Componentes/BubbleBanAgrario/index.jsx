@@ -1,6 +1,6 @@
 const BubbleBanAgrario = () => {
   return (
-    <div className="fixed lg:bottom-0 z-50 w-full drop-shadow-lg">
+    <div className="fixed lg:bottom-0 z-40 w-full drop-shadow-lg">
       <div className="grid justify-items-start mx-2">
         <div
             className="avatar grid justify-items-center cursor-pointer"

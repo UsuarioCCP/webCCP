@@ -59,7 +59,7 @@ const Mercantil = () => {
       if (!isJuridicaOpen) {
         juridicaRef.current.scrollIntoView({
           behavior: "smooth",
-          block: "end",
+          block: "center",
         });
       }
     }, 0);

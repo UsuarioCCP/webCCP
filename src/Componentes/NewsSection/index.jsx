@@ -9,7 +9,7 @@ const NewsSection = () => {
 
 
   return(
-  <section id="news" className="lg:px-4 py-2 bg-white w-full">
+  <section id="news" className="lg:px-4 py-4 bg-white w-full">
     <div>
       <div className="grid grid-cols-1 lg:grid-cols-3 w-full lg:w-11/12 gap-4 mt-2 mx-2 lg:mx-10">
         <div className="lg:col-span-2">

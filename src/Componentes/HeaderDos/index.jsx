@@ -54,7 +54,7 @@ export default function HeaderDos() {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-lg">
-      <nav aria-label="Global" className="text-base mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+      <nav aria-label="Global" className="text-base mx-auto flex max-w-7xl items-center justify-evenly p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Cámara de Comercio de Pamplona</span>
@@ -72,7 +72,7 @@ export default function HeaderDos() {
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-2">
+        <PopoverGroup className="hidden lg:flex lg:gap-x-3">
             {/* Nuestra entidad */}
             <Popover className="group">
                 <PopoverButton className="flex items-center ">

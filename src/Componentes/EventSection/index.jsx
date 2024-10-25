@@ -133,7 +133,7 @@ const events = [
 ];
 
 return(
-<div className="grid w-full my-2">
+<div className="grid w-full py-4">
   <EventCalendar events={events} />
 </div>
 )
