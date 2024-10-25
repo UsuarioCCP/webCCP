@@ -72,10 +72,10 @@ export default function HeaderDos() {
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex  lg:gap-x-2">
+        <PopoverGroup className="hidden lg:flex lg:gap-x-2">
             {/* Nuestra entidad */}
             <Popover className="group">
-                <PopoverButton className="flex items-center gap-2">
+                <PopoverButton className="flex items-center ">
                     <HoverButton text="Nuestra Entidad" />
                     <ChevronDownIcon className="size-5 group-data-[open]:rotate-180" />
                 </PopoverButton>
@@ -99,7 +99,7 @@ export default function HeaderDos() {
 
             {/* Noticia Mercantil */}
             <Popover className="group">
-                <PopoverButton className="flex items-center gap-2">
+                <PopoverButton className="flex mx-2 items-center">
                         <NavLink to="/noticia-mercantil">
                           <HoverButton text="Noticia Mercantil" />
                         </NavLink>
@@ -125,7 +125,7 @@ export default function HeaderDos() {
 
             {/* Circulo Afiliados */}
             <Popover className="group">
-                <PopoverButton className="flex items-center gap-2">
+                <PopoverButton className="flex mx-2 items-center">
                         <NavLink to="/circulo-afiliados">
                           <HoverButton text="Circulo Afiliados" />
                         </NavLink>
@@ -151,7 +151,7 @@ export default function HeaderDos() {
 
             {/* Centro Conciliación */}
             <Popover className="group">
-                <PopoverButton className="flex items-center gap-2">
+                <PopoverButton className="flex mx-2 items-center ">
                   <NavLink to="/centro-conciliacion">
                     <HoverButton text="Centro Conciliación" />
                   </NavLink>
@@ -177,7 +177,7 @@ export default function HeaderDos() {
 
             {/* Ley Transparencia */}
             <Popover className="group">
-                <PopoverButton className="flex items-center gap-2">
+                <PopoverButton className="flex mx-2 items-center">
                   <NavLink to="/ley-transparencia">
                     <HoverButton text="Ley Transparencia" />
                   </NavLink>

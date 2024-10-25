@@ -141,7 +141,7 @@ const QuienesSomos = () => {
                   </div> */}
                   <div className="w-full lg:w-5/6">
                     <div className="bg-gray-100 bg-opacity-70 shadow-lg border rounded my-4 py-5 px-10">
-                      <h3 className="text-2xl text-gradient-rose font-semibold mb-2">
+                      {/* <h3 className="text-2xl text-gradient-rose font-semibold mb-2">
                         Misión
                       </h3>
                       <p className="text-justify text-gray-900 sm:text-normal sm:leading-7 ">
@@ -156,9 +156,16 @@ const QuienesSomos = () => {
                         infraestructura adecuada, con un equipo humano
                         capacitado y comprometido que actúa con principios y
                         valores Corporativos.
+                      </p> */}
+                      <h3 className="text-2xl text-gradient-rose font-semibold mb-2">
+                        Naturaleza
+                      </h3>
+                      <p className="text-justify text-gray-900 sm:text-normal sm:leading-7 ">
+                      La Cámara de Comercio de Pamplona, es una entidad privada sin ánimo de lucro, de carácter corporativo y gremial, sujetas en la ejecución de todos los actos de administración, gestión y contratación al  derecho privado, las cuales tenemos como fines defender y estimular los intereses generales del empresariado en Colombia, y llevar los registros mercantil, de las entidades sin ánimo del lucro y el registro único de proponentes delegados legalmente, sin que formen parte integrante de la administración pública ni al régimen legal aplicable a las entidades que forman parte de la misma.
                       </p>
                     </div>
-                    <div className="bg-gray-100 bg-opacity-70 shadow-lg border rounded my-8 py-5 px-10">
+
+                    {/* <div className="bg-gray-100 bg-opacity-70 shadow-lg border rounded my-8 py-5 px-10">
                       <h3 className="text-2xl text-gradient-rose font-semibold mb-2">
                         Visión
                       </h3>
@@ -171,7 +178,8 @@ const QuienesSomos = () => {
                         de los servicios registrales, el mejoramiento continuo y
                         una cultura organizacional de calidad.
                       </p>
-                    </div>
+                    </div> */}
+
                     <div className="bg-gray-100 bg-opacity-70 shadow-lg border rounded my-8 py-5 px-10">
                       <h3 className="text-2xl text-gradient-rose font-semibold mb-2">
                         Proposito MEGA
