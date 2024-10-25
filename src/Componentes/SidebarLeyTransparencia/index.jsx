@@ -1,7 +1,5 @@
 import React from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
-import { LayoutGeneral } from "../../Layouts/LayoutGeneral";
-import { CardGeneral } from "../../Componentes/CardGeneral";
 import { BannerGeneral } from "../../Componentes/BannerGeneral";
 
 const SidebarLeyTransparencia = () => {
