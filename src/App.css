@@ -51,6 +51,10 @@ body{
   font-weight:bolder;
 }
 
+.border-dorado{
+  border: thick double var(--dorado);
+}
+
 .gradient-red-yellow{
   background:var(--gradient-red-yellow);
 }
