@@ -47,7 +47,7 @@ const RecordsCard = () => {
   ];
 
   return (
-    <div className="grid md:grid-cols-2 mt-20 lg:m-0 gap-44 md:gap-x-20 md:gap-y-48 lg:gap-x-28 lg:gap-y-40 lg:grid-cols-4">
+    <div className="grid md:grid-cols-2 mt-20 lg:m-0 gap-44 md:gap-x-20 md:gap-y-44 lg:gap-x-28 lg:gap-y-40 lg:grid-cols-4">
       {records.map((record) => (
         <div key={record.id} className="col-span-1 relative">
           <div className="flex transform transition-all duration-300 hover:scale-105 cursor-pointer rounded-lg">

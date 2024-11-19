@@ -4,76 +4,63 @@ import { SocialMedia } from "../SocialMedia";
 import { NavLink } from "react-router-dom";
 
 const NewsSection = () => {
-
   const [selectedCategory, setSelectedCategory] = useState("lo_ultimo");
 
+  return (
+    <section id="news" className="py-8 bg-white w-full">
+      <div className="max-w-screen-2xl mx-20 px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Noticias */}
+          <div className="lg:col-span-2">
+            <div className="flex flex-col gap-4">
+              {/* Encabezado */}
+              <div className="flex items-center justify-between">
+                <NavLink to="/" className="text-2xl font-bold">
+                  Noticias
+                </NavLink>
+                {/* Botones de categorías */}
+                <div className="hidden md:flex gap-4">
+                  {["lo_ultimo", "economia", "emprendimiento", "regional"].map(
+                    (category) => (
+                      <button
+                        key={category}
+                        onClick={() => setSelectedCategory(category)}
+                        className={`btn-nav font-bold ${
+                          selectedCategory === category
+                            ? "text-gradient-rose underline"
+                            : "text-gray-500 hover:text-gradient-rose"
+                        }`}
+                      >
+                        {category.replace("_", " ").toUpperCase()}
+                      </button>
+                    )
+                  )}
+                </div>
+              </div>
+              <div className="w-full h-1 bg-gray-200"></div>
 
-  return(
-  <section id="news" className="lg:px-4 py-4 bg-white w-full">
-    <div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 w-full lg:w-11/12 gap-4 mt-2 mx-2 lg:mx-10">
-        <div className="lg:col-span-2">
-          <div className="md:navbar ">
-            <div className="navbar-start">
-              <NavLink>
-                 <h2 className="text-2xl font-semibold ml-5">Noticias</h2> 
-              </NavLink>
-            </div>
-            <div className="navbar-center flex justify-center">
-              <ul className="menu menu-horizontal px-1 gap-3">
-                <li>
-                  <button
-                    onClick={() => setSelectedCategory("lo_ultimo")}
-                    className="btn-nav font-bold text-gradient-rose"
-                  >
-                    Lo ultimo
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => setSelectedCategory("economia")}
-                    className="btn-nav font-bold text-gradient-rose"
-                  >
-                    Economia
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => setSelectedCategory("emprendimiento")}
-                    className="btn-nav font-bold text-gradient-rose"
-                  >
-                    Emprendimiento
-                  </button>
-                </li>
-                <li>
-                  <button
-                    onClick={() => setSelectedCategory("regional")}
-                    className="btn-nav font-bold text-gradient-rose"
-                  >
-                    Regional
-                  </button>
-                </li>
-              </ul>
+              {/* Noticias Cards */}
+              <div>
+                <NewsCard selectedCategory={selectedCategory} />
+              </div>
+              <div className="w-full h-1 bg-gray-200"></div>
             </div>
           </div>
-          <div className="divider"></div>
-          <div className="grid">
-            <NewsCard selectedCategory={selectedCategory}  />
-          </div>
-          <div className="divider"></div>
-        </div>
-        <div className="grid justify-items-center col-span-1 w-full my-1 lg:my-2 mx-1">
-          <h2 className="text-2xl text-center font-semibold mb-4">Siguenos</h2> 
-          <div className="divider w-2/3"></div>
-            <div className="flex justify-center w-full">
+
+          {/* Social Media */}
+          <aside className="flex flex-col items-center gap-4">
+            <h2 className="text-2xl font-bold text-center">Síguenos</h2>
+            <div className="w-full h-1 bg-gray-200"></div>
+            <div className="w-full flex justify-center">
               <SocialMedia />
             </div>
-          <div className="divider w-2/3"></div>
+            <div className="w-full h-1 bg-gray-200"></div>
+          </aside>
         </div>
       </div>
-    </div>
-  </section>
-);
-}
+    </section>
+  );
+};
 
 export { NewsSection };
+
