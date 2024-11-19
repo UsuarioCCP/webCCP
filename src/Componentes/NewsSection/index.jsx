@@ -7,7 +7,7 @@ const NewsSection = () => {
   const [selectedCategory, setSelectedCategory] = useState("lo_ultimo");
 
   return (
-    <section id="news" className="py-8 bg-white w-full">
+    <section id="news" className="py-8 md:mt-20 bg-white w-full">
       <div className="max-w-screen-2xl mx-20 px-4">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Noticias */}
