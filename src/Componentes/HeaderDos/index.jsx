@@ -43,7 +43,7 @@ const leyTransparencia = [
   { name: 'Tramites', description: 'Your customers’ data will be safe and secure', href: '/ley-transparencia/tramites', icon: FingerPrintIcon },
   { name: 'Participa', description: 'Your customers’ data will be safe and secure', href: '/ley-transparencia/participa', icon: FingerPrintIcon },
   { name: 'Datos Abiertos', description: 'Your customers’ data will be safe and secure', href: '/ley-transparencia/datos-abiertos', icon: FingerPrintIcon },
-  { name: 'Información Especifica para Grupos de Interes', description: 'Your customers’ data will be safe and secure', href: '/ley-transparencia/info-grupos', icon: FingerPrintIcon },
+  { name: 'Información Especifica para Grupos de Interes', description: 'Your customers’ data will be safe and secure', href: '/ley-transparencia/info-grupos-interes', icon: FingerPrintIcon },
   { name: 'Obligación de Reporte de Información Especifica por Parte de la Entidad', description: 'Your customers’ data will be safe and secure', href: '/ley-transparencia/reporte-entidad', icon: FingerPrintIcon },
   { name: 'Atención y Servicios a la Ciudadanía', description: 'Your customers’ data will be safe and secure', href: '/ley-transparencia/atencion-ciudadania', icon: FingerPrintIcon },
   { name: 'Noticias', description: 'Your customers’ data will be safe and secure', href: '/ley-transparencia/noticias', icon: FingerPrintIcon },
