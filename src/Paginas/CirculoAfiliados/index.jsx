@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { LayoutGeneral } from "../../Layouts/LayoutGeneral";
+import { NewsAfiliados } from "../../Componentes/NewsAfiliados";
 import "./styles.css";
 
 // Botón del ítem
@@ -381,6 +382,8 @@ const CirculoAfiliados = () => {
           </div>
         </div>
       </section>
+
+      < NewsAfiliados/>
     </LayoutGeneral>
   );
 };
