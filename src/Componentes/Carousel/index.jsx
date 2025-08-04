@@ -74,7 +74,7 @@ const Carousel = () => {
               </p>
             
               <div className="mt-5">
-                <a href="/" className="btn btn-gradient-rose mb-2 lg:mr-2 transition-transform transform hover:scale-105 ">Últimas Noticias</a>
+                <a href="/" className="btn btn-gradient-rose mb-2 lg:mr-2 transition-transform transform hover:scale-105">Últimas Noticias</a>
                 <a href="/" className="btn btn-white mb-2 lg:mr-2 transition-transform transform hover:scale-105 "><span className='text-gradient-rose'>Próximos Eventos</span></a>
               </div>
             </motion.div>

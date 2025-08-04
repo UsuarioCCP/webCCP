@@ -22,20 +22,6 @@ li{
     color: black !important;
 }
 
-.menu .opcion::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 15px;
-  width: 80%;
-  height: 2px;
-  /* background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab); */
-  background-image: var(--gradient-amarillo);
-  z-index: 1;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s ease-in-out;
-}
 
 .menu .opcion:hover::before {
   transform: scaleX(1);

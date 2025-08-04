@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 const NewsAfiliados = () => {
   const currentYear = new Date().getFullYear();
@@ -37,15 +37,16 @@ const NewsAfiliados = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlide = () => {
+  // Usamos useCallback para memorizar la función y evitar recreaciones en cada render
+  const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) =>
       prevIndex < destacados.length - 1 ? prevIndex + 1 : 0
     );
-  };
+  }, [destacados.length]);
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : prevIndex));
-  };
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -53,7 +54,7 @@ const NewsAfiliados = () => {
     }, 20000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [nextSlide]); // Se mantiene estable gracias a useCallback
 
   return (
     <div className="overflow-hidden h-lvh bg-gray-50 py-16 sm:py-24">

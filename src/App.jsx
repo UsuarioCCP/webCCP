@@ -30,21 +30,23 @@ import { ReporteEntidad } from './Paginas/Transparencia/ObligacionReporte';
 import { AtencionCiudadania } from './Paginas/Transparencia/AtencionCiudadania';
 import { Noticias } from './Paginas/Transparencia/Noticias';
 //Información entidad
-import { VisionMision } from './Paginas/Transparencia/InformacionEntidad/VisionMision';
-import { FuncionesDeberes } from './Paginas/Transparencia/InformacionEntidad/FuncionesDeberes';
-import { Organigrama } from './Paginas/Transparencia/InformacionEntidad/EstructuraOrganica';
-import { MapaProcesos } from './Paginas/Transparencia/InformacionEntidad/MapaProcesos';
-import { Directorioinstitucional } from './Paginas/Transparencia/InformacionEntidad/DirectorioInstitucional';
-import { DirectorioEmpleados } from './Paginas/Transparencia/InformacionEntidad/DirectorioEmpleados';
-import { DirectorioEntidades } from './Paginas/Transparencia/InformacionEntidad/DirectorioEntidades';
-import { DirectorioAgremiaciones } from './Paginas/Transparencia/InformacionEntidad/DirectorioAgremiaciones';
-import { ServiciosEntidad } from './Paginas/Transparencia/InformacionEntidad/ServiciosEntidad';
-import { PorcedimientoDecisiones } from './Paginas/Transparencia/InformacionEntidad/ProcedimientoDecisiones';
-import { PresentacionPQRSF } from './Paginas/Transparencia/InformacionEntidad/PresentacionPQRSF';
-import { CalendarioActividades } from './Paginas/Transparencia/InformacionEntidad/CalendarioActividades';
-import { InformacionDecisiones } from './Paginas/Transparencia/InformacionEntidad/InformacionDecisiones';
-import { AutoridadesVigilantes } from './Paginas/Transparencia/InformacionEntidad/AutoridadesVigilantes';
-import { PublicaciónHV } from './Paginas/Transparencia/InformacionEntidad/PublicacionHV';
+// import { VisionMision } from './Paginas/Transparencia/InformacionEntidad/VisionMision';
+// import { FuncionesDeberes } from './Paginas/Transparencia/InformacionEntidad/FuncionesDeberes';
+// import { Organigrama } from './Paginas/Transparencia/InformacionEntidad/EstructuraOrganica';
+// import { MapaProcesos } from './Paginas/Transparencia/InformacionEntidad/MapaProcesos';
+// import { Directorioinstitucional } from './Paginas/Transparencia/InformacionEntidad/DirectorioInstitucional';
+// import { DirectorioEmpleados } from './Paginas/Transparencia/InformacionEntidad/DirectorioEmpleados';
+// import { DirectorioEntidades } from './Paginas/Transparencia/InformacionEntidad/DirectorioEntidades';
+// import { DirectorioAgremiaciones } from './Paginas/Transparencia/InformacionEntidad/DirectorioAgremiaciones';
+// import { ServiciosEntidad } from './Paginas/Transparencia/InformacionEntidad/ServiciosEntidad';
+// import { PorcedimientoDecisiones } from './Paginas/Transparencia/InformacionEntidad/ProcedimientoDecisiones';
+// import { PresentacionPQRSF } from './Paginas/Transparencia/InformacionEntidad/PresentacionPQRSF';
+// import { CalendarioActividades } from './Paginas/Transparencia/InformacionEntidad/CalendarioActividades';
+// import { InformacionDecisiones } from './Paginas/Transparencia/InformacionEntidad/InformacionDecisiones';
+// import { AutoridadesVigilantes } from './Paginas/Transparencia/InformacionEntidad/AutoridadesVigilantes';
+// import { PublicaciónHV } from './Paginas/Transparencia/InformacionEntidad/PublicacionHV';
+
+// se comento las importaciones para dejar el poryecto deshabilitado
 
 // import { Footer } from './Componentes/Footer';
 // import axios from 'axios';
