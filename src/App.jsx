@@ -64,7 +64,7 @@ function App() {
           fontSize: "2rem",
         }}
       >
-        Sitio en mantenimiento
+        Sitio en mantenimiento...
       </div>
     );
   }
